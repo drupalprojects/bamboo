@@ -1,0 +1,113 @@
+/* Alternate beta theme css for flexslider */
+
+#slider {
+  background: #ccc;
+  background: -moz-linear-gradient(#ddd,#bbb);
+  background: -webkit-linear-gradient(#ddd,#bbb);
+  background: -o-linear-gradient(#ddd,#bbb);
+  background: -ms-linear-gradient(#ddd,#bbb);
+  background: linear-gradient(#ddd,#bbb);
+  box-shadow: 0 0 3px #999;
+  margin: 0 0 1.83%;
+  position: relative;
+}
+
+#slider a:active {
+  outline: none;
+}
+
+.slides,
+.flex-control-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slides {
+  overflow: hidden;
+  width: 100%;
+}
+
+#slider .slides > li {
+  display: none;
+  margin: 0;
+  position: relative;
+}
+
+#slider .slides li:first-child {
+  display: list-item;
+}
+
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+.slides:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+.flex-control-nav {
+  bottom: 7.3%;
+  position: absolute;
+  right: 4%;
+  text-align: center;
+}
+
+.flex-control-nav li {
+  display: inline-block;
+  margin: 0 0 0 15px;
+}
+
+.flex-control-nav li:first-child {
+  margin: 0;
+}
+
+.flex-control-nav li a {
+  background: #e9e9e9;
+  box-shadow: 0 0 3px #999;
+  color: #333;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  height: 24px;
+  line-height: 24px;
+  width: 24px;
+}
+
+.flex-control-nav li a.active,
+.flex-control-nav li a:hover {
+  background: #fff;
+}
+
+#slider .post {
+  background: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 1.83%;
+}
+
+#slider .entry-container {
+  float: right;
+  max-width: 34%;
+}
+
+#slider .slide-image {
+  background: #e9e9e9;
+  max-width: 64%;
+  padding: 0.47%;
+}
+
+#slider .entry-header,
+#slider .entry-summary {
+  margin-left: 5%;
+}
+
+#slider .entry-title {
+  margin-bottom: 15px;
+  margin-left: 0;
+}
