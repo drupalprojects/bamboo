@@ -1,0 +1,53 @@
+name = bamboo
+description = bamboo is a responsive Drupal 7 theme designed and developed by Danny Englander, <a href="http://highrockmedia.com">High Rock Media</a>
+core = 7.x
+engine = phptemplate
+
+; CSS --------------------
+
+; --- Note, 'responsive.css' must come last!
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/design.css
+stylesheets[all][] = css/responsive.css
+
+; Scripts --------------------
+scripts[] = js/scripts.js
+
+; Regions --------------------
+regions[sidebar_first]  = Sidebar first
+regions[header]         = Header
+regions[front_welcome]  = Front welcome
+regions[content]        = Content
+regions[content_top]    = Content top
+regions[preface_first]  = Preface first
+regions[preface_second] = Preface second
+regions[preface_third]  = Preface third
+regions[help]           = Help
+regions[footer_first]   = Footer first
+regions[footer_second]  = Footer second
+regions[footer_third]   = Footer third
+regions[footer_fourth]  = Footer fourth
+
+; Features --------------------
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = favicon
+features[] = main_menu
+
+; Deafult settings --------------
+
+settings[breadcrumbs]  = 1
+settings[slideshow_display]  = 1
+settings[slide1_head]  = "Our Products"
+settings[slide2_head]  = "Our Services"
+settings[slide3_head]  = "About Us"
+settings[slide1_desc]  = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+settings[slide2_desc]  = "Nam in dui risus, eget cursus est."
+settings[slide3_desc]  = "Quisque sagittis sem a libero egestas volutpat."
+settings[slide1_url]  = "node/1"
+settings[slide2_url]  = "node/2"
+settings[slide3_url]  = "node/3"

@@ -1,0 +1,200 @@
+/* Design and Colors */
+/* Get Google fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700);
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lusitana:400,700);
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'IM Fell English', serif; */
+/* font-family: 'Lusitana', serif;*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: #8ea61f;
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+}
+
+a:hover {
+  color: #d54e21;
+  text-decoration: none;
+}
+
+/* Typography
+================================= */
+.header-font-sans-serif h1,
+.header-font-sans-serif h2,
+.header-font-sans-serif h3,
+.header-font-sans-serif h4,
+.header-font-sans-serif h5,
+.header-font-sans-serif h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header-font-serif h1,
+.header-font-serif h2,
+.header-font-serif h3,
+.header-font-serif h4,
+.header-font-serif h5,
+.header-font-serif h6 {
+  font-family: Lusitana, serif;
+}
+
+/* Defaults */
+#main-menu li li a,
+#main-menu li li a:link,
+#main-menu li li a:visited {
+  background-color: #152d43;
+}
+
+#main-menu li li a:hover,
+#main-menu li li a:active {
+  background: #01152a;
+}
+
+.date-in-parts {
+  background: #8ea61f;
+}
+
+.sidebar .block > h2 {
+  background: #8ea61f;
+  box-shadow: -2px 2px 11px rgba(50, 50, 50, 0.41);
+  -webkit-box-shadow: -2px 2px 11px rgba(50, 50, 50, 0.41);
+  -moz-box-shadow: -2px 2px 11px rgba(50, 50, 50, 0.41);
+}
+
+#bottom {
+  background: #4e4554;
+}
+
+#copyright {
+  background: #3e3742;
+}
+
+.form-submit {
+  background-color: #5aa2ef;
+}
+
+.form-submit:hover {
+  background: #454444;
+}
+
+/* Color Palettes*/
+/* Green Bamboo */
+.color-palette-green-bamboo a {
+  color: #8ea61f;
+}
+
+.color-palette-green-bamboo a:hover {
+  color: #666;
+}
+
+.color-palette-green-bamboo .sidebar .block > h2,
+.color-palette-green-bamboo .date-in-parts,
+.color-palette-green-bamboo nav#main-menu ul li li a {
+  background: #8ea61f;
+}
+
+.color-palette-green-bamboo h1,
+.color-palette-green-bamboo h2,
+.color-palette-green-bamboo h3 {
+  color: #8ea61f;
+}
+
+/* Dark Turquoise */
+.color-palette-dark-turquoise a {
+  color: #005d5d;
+}
+
+.color-palette-dark-turquoise a:hover {
+  color: #666;
+}
+
+.color-palette-dark-turquoise .sidebar .block > h2,
+.color-palette-dark-turquoise .date-in-parts,
+.color-palette-dark-turquoise nav#main-menu ul li li a {
+  background: #005d5d;
+}
+
+/* Warm Purple */
+.color-palette-warm-purple a {
+  color: #514165;
+}
+
+.color-palette-warm-purple a:hover {
+  color: #666;
+}
+
+.color-palette-warm-purple .sidebar .block > h2,
+.color-palette-warm-purple .date-in-parts,
+.color-palette-warm-purple nav#main-menu ul li li a {
+  background: #514165;
+}
+
+/* Backgrounds */
+/* Fabric */
+body.bg-light-fabric {
+  background: url(../images/bg-fabric.png) repeat fixed;
+}
+
+/* Cloth */
+body.bg-light-cloth {
+  background: url(../images/bg-cloth.png) repeat fixed;
+}
+
+/* Medium Gray */
+body.bg-med-gray {
+  background: #949494;
+}
+
+/* Dark Linen */
+body.bg-dark-linen {
+  background: url(../images/bg-dark-linen.png) repeat fixed;
+}
+
+body.bg-tiles {
+  background: url("../images/bg-tiles.png") repeat fixed;
+}
+
+body.bg-retro {
+  background: url("../images/bg-retro.png") repeat fixed;
+}
+
+body.bg-dark-linen #colophon {
+  background: rgb(132,132,132); /* Old browsers */
+  background: -moz-linear-gradient(top,
+  rgba(132,132,132,1) 0%,
+  rgba(132,132,132,1) 46%,
+  rgba(170,170,170,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear,
+  left top,
+  left bottom,
+  color-stop(0%,rgba(132,132,132,1)),
+  color-stop(46%,rgba(132,132,132,1)),
+  color-stop(100%,rgba(170,170,170,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,
+  rgba(132,132,132,1) 0%,
+  rgba(132,132,132,1) 46%,
+  rgba(170,170,170,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,
+  rgba(132,132,132,1) 0%,
+  rgba(132,132,132,1) 46%,
+  rgba(170,170,170,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,
+  rgba(132,132,132,1) 0%,
+  rgba(132,132,132,1) 46%,
+  rgba(170,170,170,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,
+  rgba(132,132,132,1) 0%,rgba(132,132,132,1) 46%,
+  rgba(170,170,170,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#848484',
+  endColorstr='#aaaaaa',
+  GradientType=0 ); /* IE6-8 */
+}
