@@ -1,9 +1,10 @@
-<?php
+<!--
 /**
  * @file
  * This is the alpha slideshow include file for page.tpl.php.
  */
-?>
+
+-->
 
 <div class="flexslider">
   <ul class="slides">
@@ -36,7 +37,3 @@
     </li>
   </ul>
 </div>
-
-<?php {
-  // for the sake of  PAReview.
-}

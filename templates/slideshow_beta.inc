@@ -1,9 +1,10 @@
-<?php
+<!--
 /**
  * @file
  * This is the beta slideshow include file for page.tpl.php.
  */
-?>
+
+-->
 
 <section id="slider">
   <ul class="slides">
@@ -37,15 +38,15 @@
             <?php print $headline_2; ?></a>
           </h2>
         </header>
-        <!-- entry-header -->
+        <!-- Entry-header -->
         <div class="entry-summary">
           <p><?php print $desc_2; ?></p>
           <a href="<?php print url($url_2); ?>">Read more...</a>
         </div>
-        <!-- entry-summary -->
+        <!-- Entry-summary -->
         <div class="clear"></div>
       </div>
-      <!-- entry-container -->
+      <!-- Entry-container -->
       <img
         src="<?php print base_path() . drupal_get_path('theme', 'bamboo') . '/images/slide-image-2.jpg'; ?>"
         class="slide-image"/>
@@ -78,7 +79,3 @@
 
   </ul>
 </section>
-
-<?php {
-  // for the sake of  PAReview.
-}
