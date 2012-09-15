@@ -79,7 +79,8 @@ a:hover {
 }
 
 .form-submit {
-  background-color: #5aa2ef;
+  background-color: #ccc;
+  color: #333;
 }
 
 .form-submit:hover {
@@ -168,33 +169,16 @@ body.bg-retro {
 }
 
 body.bg-dark-linen #colophon {
-  background: rgb(132,132,132); /* Old browsers */
-  background: -moz-linear-gradient(top,
-  rgba(132,132,132,1) 0%,
-  rgba(132,132,132,1) 46%,
-  rgba(170,170,170,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear,
-  left top,
-  left bottom,
-  color-stop(0%,rgba(132,132,132,1)),
-  color-stop(46%,rgba(132,132,132,1)),
-  color-stop(100%,rgba(170,170,170,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,
-  rgba(132,132,132,1) 0%,
-  rgba(132,132,132,1) 46%,
-  rgba(170,170,170,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,
-  rgba(132,132,132,1) 0%,
-  rgba(132,132,132,1) 46%,
-  rgba(170,170,170,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,
-  rgba(132,132,132,1) 0%,
-  rgba(132,132,132,1) 46%,
-  rgba(170,170,170,1) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,
-  rgba(132,132,132,1) 0%,rgba(132,132,132,1) 46%,
-  rgba(170,170,170,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#848484',
-  endColorstr='#aaaaaa',
-  GradientType=0 ); /* IE6-8 */
+  background-image: linear-gradient(bottom, rgb(230,230,230) 42%, rgb(186,186,186) 95%);
+  background-image: -o-linear-gradient(bottom, rgb(230,230,230) 42%, rgb(186,186,186) 95%);
+  background-image: -moz-linear-gradient(bottom, rgb(230,230,230) 42%, rgb(186,186,186) 95%);
+  background-image: -webkit-linear-gradient(bottom, rgb(230,230,230) 42%, rgb(186,186,186) 95%);
+  background-image: -ms-linear-gradient(bottom, rgb(230,230,230) 42%, rgb(186,186,186) 95%);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.42, rgb(230,230,230)),
+    color-stop(0.95, rgb(186,186,186))
+  );
 }

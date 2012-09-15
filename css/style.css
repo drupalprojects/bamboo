@@ -503,9 +503,7 @@ footer {
 
 .form-submit {
   -moz-transition: all 0.2s ease-in-out 0s;
-
-
-  background: url("../images/diagonal.png") repeat scroll 0 0 #5aa2ef;
+  background: #ccc;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;

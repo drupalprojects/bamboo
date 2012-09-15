@@ -2,7 +2,7 @@ Version 1.4, August 31, 2012
 
 -- SUMMARY --
 
-bamboo is a bespoke responsive Drupal 7 theme with an elegant home page
+Bamboo is a bespoke responsive Drupal 7 theme with an elegant home page
 slideshow, and allows for a choice of backgrounds and color palettes in the
 theme settings.bamboo is aimed at users who want to get a theme up and running
 fast, and may not want to take the time to create a sub-theme and fuss about
