@@ -169,16 +169,10 @@ body.bg-retro {
 }
 
 body.bg-dark-linen #colophon {
-  background-image: linear-gradient(bottom, rgb(230,230,230) 42%, rgb(186,186,186) 95%);
-  background-image: -o-linear-gradient(bottom, rgb(230,230,230) 42%, rgb(186,186,186) 95%);
-  background-image: -moz-linear-gradient(bottom, rgb(230,230,230) 42%, rgb(186,186,186) 95%);
-  background-image: -webkit-linear-gradient(bottom, rgb(230,230,230) 42%, rgb(186,186,186) 95%);
-  background-image: -ms-linear-gradient(bottom, rgb(230,230,230) 42%, rgb(186,186,186) 95%);
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.42, rgb(230,230,230)),
-    color-stop(0.95, rgb(186,186,186))
-  );
+  background: #bababa;
+  background: -moz-repeating-linear-gradient(#e6e6e6, #bababa 40px);
+  background: -webkit-repeating-linear-gradient(#e6e6e6, #bababa 40px);
+  background: -o-repeating-linear-gradient(#e6e6e6, #bababa 40px);
+  background: -ms-repeating-linear-gradient(#e6e6e6, #bababa 40px);
+  background: repeating-linear-gradient(#e6e6e6, #bababa 40px);
 }
