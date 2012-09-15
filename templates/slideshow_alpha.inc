@@ -1,9 +1,9 @@
-<!--
+<?php
 /**
  * @file
- * This is the slideshow include file for page.tpl.php
+ * This is the alpha slideshow include file for page.tpl.php.
  */
--->
+?>
 
 <div class="flexslider">
   <ul class="slides">
