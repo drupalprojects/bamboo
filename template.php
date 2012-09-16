@@ -145,7 +145,6 @@ function bamboo_page_alter($page) {
  */
 if (drupal_is_front_page()) {
   drupal_add_js(drupal_get_path('theme', 'bamboo') . '/js/jquery.flexslider-min.js');
-  drupal_add_js(drupal_get_path('theme', 'bamboo') . '/js/slide.js');
 
   // If alpha theme.
   if (theme_get_setting('choose_slideshow') == 'alpha') {
