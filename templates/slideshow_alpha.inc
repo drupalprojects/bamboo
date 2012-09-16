@@ -37,3 +37,11 @@
     </li>
   </ul>
 </div>
+
+<?php
+/**
+ * @file
+ * Slideshow alpha include file.
+*/
+{
+}

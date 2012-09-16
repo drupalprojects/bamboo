@@ -55,6 +55,9 @@ function bamboo_preprocess_page(&$variables) {
   $variables['slideshow_alpha'] = (theme_get_setting('choose_slideshow') == 'alpha');
   $variables['slideshow_beta'] = (theme_get_setting('choose_slideshow') == 'beta');
 
+  // Create variable if slideshow is on.
+  $variables['slideshow_on'] = (theme_get_setting('slideshow_display') == '1');
+
   // Slideshow variables for include files.
   $variables['url_1'] = theme_get_setting('slide1_url', 'bamboo');
   $variables['desc_1'] = theme_get_setting('slide1_desc', 'bamboo');
@@ -65,7 +68,6 @@ function bamboo_preprocess_page(&$variables) {
   $variables['url_3'] = theme_get_setting('slide3_url', 'bamboo');
   $variables['desc_3'] = theme_get_setting('slide3_desc', 'bamboo');
   $variables['headline_3'] = theme_get_setting('slide3_head', 'bamboo');
-
 }
 
 /**

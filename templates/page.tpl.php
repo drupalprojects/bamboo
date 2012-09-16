@@ -102,7 +102,7 @@
 
   <?php if ($is_front): ?>
   <div id="slideshow-wrapper" class="container">
-  <?php if (theme_get_setting('slideshow_display', 'bamboo')): ?>
+  <?php if ($slideshow_on): ?>
 
   <!-- Determine which slideshow is used based on user choice in theme settings. -->
   <?php if ($slideshow_alpha): ?>
