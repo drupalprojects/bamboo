@@ -3,6 +3,7 @@
  * @file
  * This is the beta slideshow include file for page.tpl.php.
  */
+
 ?>
 
 <section id="slider">

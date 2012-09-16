@@ -3,6 +3,7 @@
  * @file
  * This is the alpha slideshow include file for page.tpl.php.
  */
+
 ?>
 
 <div class="flexslider">
@@ -36,7 +37,3 @@
     </li>
   </ul>
 </div>
-
-<?php {
-  
-}
