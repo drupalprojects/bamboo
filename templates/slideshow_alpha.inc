@@ -1,10 +1,9 @@
-<!--
+<?php
 /**
  * @file
  * This is the alpha slideshow include file for page.tpl.php.
  */
-
--->
+?>
 
 <div class="flexslider">
   <ul class="slides">
@@ -38,10 +37,6 @@
   </ul>
 </div>
 
-<?php
-/**
- * @file
- * Slideshow alpha include file.
-*/
-{
+<?php {
+  
 }

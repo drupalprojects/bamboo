@@ -104,7 +104,7 @@
   <div id="slideshow-wrapper" class="container">
   <?php if ($slideshow_on): ?>
 
-  <!-- Determine which slideshow is used based on user choice in theme settings. -->
+  <!-- Determine which slideshow is used. -->
   <?php if ($slideshow_alpha): ?>
     <?php require_once dirname(__FILE__) . '/slideshow_alpha.inc'; ?>
   <?php else: ?>
