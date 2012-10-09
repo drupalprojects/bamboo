@@ -101,22 +101,9 @@
 <div class="container" id="content-wrapper">
 
   <?php if ($is_front): ?>
-  <div id="slideshow-wrapper" class="container">
-  <?php if ($slideshow_on): ?>
-
-  <!-- Determine which slideshow is used. -->
-  <?php if ($slideshow_alpha): ?>
-    <?php require_once dirname(__FILE__) . '/slideshow_alpha.inc'; ?>
-  <?php else: ?>
-    <?php require_once dirname(__FILE__) . '/slideshow_beta.inc'; ?>
-  <?php endif; ?>
-
-  <?php endif; ?>
-
       <?php if ($page['front_welcome']): ?>
         <div id="front-welcome"> <?php print render($page['front_welcome']); ?></div>
       <?php endif; ?>
-    </div>
   <?php endif; ?>
 
   <div id="breadcrumbs"><?php if (theme_get_setting('breadcrumbs', 'bamboo')): ?>
