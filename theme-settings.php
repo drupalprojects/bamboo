@@ -4,15 +4,6 @@
  * @file
  * Theme setting callbacks for the bamboo theme.
  */
-
-/**
- * Implements hook_form_FORM_ID_alter().
- *
- * @param $form
- *   The form.
- * @param $form_state
- *   The form state.
- */
 function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
 
   $form['bamboo_settings'] = array(
