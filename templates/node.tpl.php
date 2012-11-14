@@ -91,7 +91,7 @@
     <?php endif; ?>
     <?php print render($title_suffix); ?>
 
-  <?php if ($submitted): ?>
+  <?php if ($display_submitted): ?>
   <!-- overidden in template.php to show just username -->
   <span class="submitted"><?php print $submitted; ?></span>
 
