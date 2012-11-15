@@ -92,6 +92,10 @@
     <?php print render($title_suffix); ?>
 
   <?php if ($display_submitted): ?>
+<<<<<<< Updated upstream
+=======
+  <div id="submit-wrapper">
+>>>>>>> Stashed changes
   <!-- overidden in template.php to show just username -->
   <span class="submitted"><?php print $submitted; ?></span>
 
@@ -102,6 +106,7 @@
     <span class="year"><?php echo date("Y", $node->created); ?></span>
   </div><!--//date-in-parts -->
   <?php endif; ?>
+  </div><!--//submit-wrapper-->
 
     <div<?php print $content_attributes; ?>>
         <?php

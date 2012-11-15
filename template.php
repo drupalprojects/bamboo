@@ -16,6 +16,33 @@ function bamboo_html_head_alter(&$head_elements) {
 }
 
 /**
+ * Preprocesses variables for theme_username().
+ *
+ * Modules that make any changes to variables like 'name' or 'extra' must insure
+ * that the final string is safe to include directly in the output by using
+ * check_plain() or filter_xss().
+ *
+ * @see template_process_username()
+ */
+function bamboo_preprocess_username(&$vars) {
+
+  // Update the username so it's the full name of the user.
+  $account = $vars['account'];
+
+  // Revise the name trimming done in template_preprocess_username.
+  $name = $vars['name_raw'] = format_username($account);
+
+  // Trim the altered name as core does, but with a higher character limit.
+  if (drupal_strlen($name) > 25) {
+    $name = drupal_substr($name, 0, 25) . '...';
+  }
+
+  // Assign the altered name to $vars['name'].
+  $vars['name'] = check_plain($name);
+
+}
+
+/**
  * Insert themed breadcrumb page navigation at top of the node content.
  */
 function bamboo_breadcrumb($variables) {

@@ -258,6 +258,10 @@ h6 {
   padding: 0px 0px 25px 0px;
 }
 
+#content #post-content {
+  padding: 10px;
+}
+
 #head {
   -webkit-box-shadow: 0px 0px 17px rgba(50, 50, 50, 0.56);
   -moz-box-shadow: 0px 0px 17px rgba(50, 50, 50, 0.56);
@@ -475,7 +479,7 @@ footer {
   font-size: .89em;
   font-weight: bold;
   margin-bottom: 6px;
-  padding: 4px 9px;
+  padding: 4px 9px 4px 0;
 }
 
 #preface-wrapper {
@@ -509,20 +513,21 @@ footer {
 /* Buttons, Form
 /*-------------------------------------------*/
 
-.form-submit {
-  -moz-transition: all 0.2s ease-in-out 0s;
-  background: #ccc;
-  border-radius: 5px;
+input[type="submit"] {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  background: #67C1C9;
+  border: 0;
+  border-radius: 7px;
   color: #fff;
-  cursor: pointer;
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-right: 4px;
-  padding: 4px 6px;
+  font-size: .8em;
+  padding: 7px 8px;
+  text-transform: uppercase;
 }
 
-.form-submit:hover {
-  background: #454444;
+input[type="submit"]:hover {
+  background: #999;
+  cursor: pointer;
 }
 
 input.form-checkbox,
@@ -549,8 +554,12 @@ input.form-radio {
   padding: 0;
 }
 
+<<<<<<< Updated upstream
 .region.region-content ul li:before,
 aside.sidebar ul li:before {
+=======
+.links.node-links ul li:before {
+>>>>>>> Stashed changes
   content: "\00bb";
   padding-right: 8px;
 }
@@ -697,7 +706,7 @@ ul.secondary a.active {
 /*-------------------------------------------*/
 
 #comments {
-  border: 1px solid #dddddd;
+  border: 2px solid #cecece;
   border-radius: 8px;
   clear: both;
   margin-top: 14px;
@@ -706,8 +715,7 @@ ul.secondary a.active {
 
 .comment {
   border-bottom: 1px solid #d9d9d9;
-  border-radius: 7px;
-  margin-bottom: 1.5em;
+  margin-bottom: .2em;
   min-height: 150px;
   padding: 5px;
 }
@@ -719,9 +727,21 @@ h3.comment-title a {
 }
 
 .comment .new {
-  color: red;
+  background: #E5E5E5;
+  border-radius: 4px;
+  color: #67C1C9;
   margin-left: 1em;
-  text-transform: capitalize;
+  padding: 3px 10px;
+  text-transform: uppercase;
+}
+
+.comment .new:after{
+  content: "\0020\0021";
+}
+
+.comment h3 {
+  margin-top: 0;
+  margin-bottom: .5em;
 }
 
 .form-textarea-wrapper textarea {
@@ -732,6 +752,8 @@ h3.comment-title a {
 .comment .submitted {
   background: #e5e5e5;
   display: inline;
+  margin-bottom: 6px;
+  padding: 4px 10px;
 }
 
 .comment .user-picture {
@@ -761,7 +783,7 @@ h3.comment-title a {
   border-radius: 20px;
   float: left;
   height: 72px;
-  margin: 6px 6px 2px 10px;
+  margin: 6px 6px 2px 0;
   width: 72px;
 }
 
