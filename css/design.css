@@ -105,13 +105,21 @@ a:hover {
 
 .color-palette-green-bamboo h1,
 .color-palette-green-bamboo h2,
-.color-palette-green-bamboo h3 {
+.color-palette-green-bamboo h3,
+.color-palette-green-bamboo h4,
+.color-palette-green-bamboo h5,
+.color-palette-green-bamboo h6{
   color: #8ea61f;
+}
+
+.color-palette-green-bamboo pre,
+.color-palette-green-bamboo code {
+  background: #d2df95;
 }
 
 /* Dark Turquoise */
 .color-palette-dark-turquoise a {
-  color: #005d5d;
+  color: #118893;
 }
 
 .color-palette-dark-turquoise a:hover {
@@ -121,8 +129,27 @@ a:hover {
 .color-palette-dark-turquoise .sidebar .block > h2,
 .color-palette-dark-turquoise .date-in-parts,
 .color-palette-dark-turquoise nav#main-menu ul li li a {
-  background: #005d5d;
+  background: #118893;
 }
+
+.color-palette-dark-turquoise h1,
+.color-palette-dark-turquoise h2,
+.color-palette-dark-turquoise h3,
+.color-palette-dark-turquoise h4,
+.color-palette-dark-turquoise h5,
+.color-palette-dark-turquoise h6{
+  color: #118893;
+}
+
+.color-palette-dark-turquoise pre,
+.color-palette-dark-turquoise code {
+  background: #67C1C9;
+}
+
+.color-palette-dark-turquoise blockquote,
+.color-palette-dark-turquoise q {
+  background: #DEDEDE url("../images/quote-turq.png") no-repeat;
+  }
 
 /* Warm Purple */
 .color-palette-warm-purple a {

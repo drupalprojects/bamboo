@@ -33,11 +33,14 @@ nav ul {
 
 blockquote,
 q {
-  background: #d8d8d8 url("../images/quote.png") no-repeat;
-  border: 1px solid #bbb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background: #dedede url("../images/quote.png") no-repeat;
   border-radius: 7px;
   margin: 5px 0;
-  padding: 10px 5px 5px 47px;
+  padding: 10px 12px 5px 47px;
   quotes: none;
 }
 
@@ -51,11 +54,17 @@ q:after {
 
 pre,
 code {
-  background: #d8d8d8;
-  border: 1px solid #bbb;
-  border-radius: 7px;
-  margin: 5px 0;
-  padding: 7px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background: #ccc;
+  border: 1px solid #999;
+  border-radius: 5px;
+  display: block;
+  font-family: monospace;
+  margin: 2px 0;
+  overflow: auto;
+  padding: 6px 0 4px 14px;
+  width: 98%;
 }
 
 ins {
@@ -173,7 +182,6 @@ em {
   font-style: italic;
 }
 
-ul,
 ol {
   padding-left: 20px;
 }
@@ -206,32 +214,33 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  margin: 0px 0px 10px 0px;
+  margin: 14px 0px 4px 0px;
   padding: 0;
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 1.8em;
+  margin-top: 0;
 }
 
 h2 {
-  font-size: 21px;
+  font-size: 1.4em
 }
 
 h3 {
-  font-size: 19px;
+  font-size: 1.3em;
 }
 
 h4 {
-  font-size: 17px;
+  font-size: 1.2em;
 }
 
 h5 {
-  font-size: 15px;
+  font-size: 1.1em;
 }
 
 h6 {
-  font-size: 13px;
+  font-size: 1em;
 }
 
 /* Layout
@@ -369,7 +378,7 @@ footer {
 }
 
 #content {
-  margin-top: 25px;
+  margin-top: 4px;
 }
 
 .node {
@@ -377,8 +386,7 @@ footer {
   padding-bottom: 20px;
 }
 
-.node h2.title,
-.page-title {
+.node h2.title {
   color: #4d4d4d;
   font-size: 20px;
 }
@@ -529,7 +537,7 @@ input.form-radio {
 }
 
 /*-------------------------------------------*
-/* Menus and item lists
+/* Menus and lists
 /*-------------------------------------------*/
 .item-list ul {
   margin: 0;
@@ -539,6 +547,17 @@ input.form-radio {
 .item-list ul li {
   margin: 0;
   padding: 0;
+}
+
+.region.region-content ul li:before,
+aside.sidebar ul li:before {
+  content: "\00bb";
+  padding-right: 8px;
+}
+
+.region.region-content ul li,
+aside.sidebar ul li {
+  list-style: none;
 }
 
 ul.menu li {
