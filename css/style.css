@@ -35,9 +35,9 @@ blockquote,
 q {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+  background: #dedede url("../images/quote.png") no-repeat;
   border: 1px solid #999;
   border-radius: 5px;
-  background: #dedede url("../images/quote.png") no-repeat;
   border-radius: 7px;
   margin: 5px 0;
   padding: 10px 12px 5px 47px;
@@ -224,7 +224,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4em
+  font-size: 1.4em;
 }
 
 h3 {
@@ -515,7 +515,7 @@ footer {
 input[type="submit"] {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
-  background: #67C1C9;
+  background: #67c1c9;
   border: 0;
   border-radius: 7px;
   color: #fff;
@@ -721,21 +721,21 @@ h3.comment-title a {
 }
 
 .comment .new {
-  background: #E5E5E5;
+  background: #e5e5e5;
   border-radius: 4px;
-  color: #67C1C9;
+  color: #67c1c9;
   margin-left: 1em;
   padding: 3px 10px;
   text-transform: uppercase;
 }
 
-.comment .new:after{
+.comment .new:after {
   content: "\0020\0021";
 }
 
 .comment h3 {
-  margin-top: 0;
   margin-bottom: .5em;
+  margin-top: 0;
 }
 
 .form-textarea-wrapper textarea {
@@ -774,7 +774,7 @@ h3.comment-title a {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   background: #5c9d00;
-  border-radius: 20px;
+  border-radius: 90px;
   float: left;
   height: 72px;
   margin: 6px 6px 2px 0;
@@ -975,11 +975,11 @@ nav#main-menu ul li li.last a {
 
 .img-caption {
   display: block;
-  position: relative;
-  top: -12px;
   font-size: .8em;
   font-style: italic;
+  position: relative;
   text-align: left;
+  top: -12px;
 }
 
 .front .img-caption {

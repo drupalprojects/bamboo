@@ -169,7 +169,7 @@ if (drupal_is_front_page()) {
  */
 function bamboo_preprocess_html(&$vars) {
 
-  // add a body class is the site name is hidden
+  // Add a body class is the site name is hidden.
   if (theme_get_setting('toggle_name') == FALSE) {
     $vars['classes_array'][] = 'site-name-hidden';
   }

@@ -7,6 +7,10 @@
 /* font-family: 'IM Fell English', serif; */
 /* font-family: 'Lusitana', serif;*/
 
+/* colors
+http://colorschemedesigner.com/#2811Tq1lCw0w0
+*/
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -88,6 +92,7 @@ a:hover {
 }
 
 /* Color Palettes*/
+
 /* Green Bamboo */
 .color-palette-green-bamboo a {
   color: #8ea61f;
@@ -108,7 +113,7 @@ a:hover {
 .color-palette-green-bamboo h3,
 .color-palette-green-bamboo h4,
 .color-palette-green-bamboo h5,
-.color-palette-green-bamboo h6{
+.color-palette-green-bamboo h6 {
   color: #8ea61f;
 }
 
@@ -119,7 +124,7 @@ a:hover {
 
 /* Dark Turquoise */
 .color-palette-dark-turquoise a {
-  color: #118893;
+  color: #BDBA0D;
 }
 
 .color-palette-dark-turquoise a:hover {
@@ -129,7 +134,23 @@ a:hover {
 .color-palette-dark-turquoise .sidebar .block > h2,
 .color-palette-dark-turquoise .date-in-parts,
 .color-palette-dark-turquoise nav#main-menu ul li li a {
-  background: #118893;
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(bottom, #BDBA0D 0%, #8F8D0A 100%);
+
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(bottom, #BDBA0D 0%, #8F8D0A 100%);
+
+  /* Opera */
+  background-image: -o-linear-gradient(bottom, #BDBA0D 0%, #8F8D0A 100%);
+
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #BDBA0D), color-stop(1, #8F8D0A));
+
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(bottom, #BDBA0D 0%, #8F8D0A 100%);
+
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to top, #BDBA0D 0%, #8F8D0A 100%);
 }
 
 .color-palette-dark-turquoise h1,
@@ -137,19 +158,19 @@ a:hover {
 .color-palette-dark-turquoise h3,
 .color-palette-dark-turquoise h4,
 .color-palette-dark-turquoise h5,
-.color-palette-dark-turquoise h6{
-  color: #118893;
+.color-palette-dark-turquoise h6 {
+  color: #BDBA0D;
 }
 
 .color-palette-dark-turquoise pre,
 .color-palette-dark-turquoise code {
-  background: #67C1C9;
+  background: #C47F28;
 }
 
 .color-palette-dark-turquoise blockquote,
 .color-palette-dark-turquoise q {
-  background: #DEDEDE url("../images/quote-turq.png") no-repeat;
-  }
+  background: #dedede url("../images/quote-turq.png") no-repeat;
+}
 
 /* Warm Purple */
 .color-palette-warm-purple a {
