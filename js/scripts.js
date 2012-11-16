@@ -6,7 +6,7 @@
 (function ($) {
 
 //add drupal 7 code
-  Drupal.behaviors.replsearchtermsTheme = {
+  Drupal.behaviors.miscTheme = {
     attach:function (context, settings) {
 //end drupal calls
 
@@ -38,6 +38,22 @@
 // prepend the post date before the H1.
   $(".date-in-parts")
     .prependTo(".not-front.page-node #post-content");
+
+// global zebra stripes
+  $(".front article:visible:even").addClass("even");
+  $(".front article:visible:odd").addClass("odd");
+
+// Set image captions for image field.
+  $(".field-type-image img").each(function (i, ele) {
+    var alt = this.alt;
+      if ($("img-caption").length == 0) {
+        $(this).closest(".field-type-image .field-item").append("<span " +
+          "class='img-caption'>" + this.alt + "</span>");
+        }
+        else {
+          $(this).closest(".field-type-image .field-item").append("");
+        }
+  });
 
   }
 }

@@ -92,21 +92,20 @@
     <?php print render($title_suffix); ?>
 
   <?php if ($display_submitted): ?>
-<<<<<<< Updated upstream
-=======
   <div id="submit-wrapper">
->>>>>>> Stashed changes
-  <!-- overidden in template.php to show just username -->
+
+  <!-- Overidden in template.php to show just username. -->
   <span class="submitted"><?php print $submitted; ?></span>
 
-  <!-- then show the date in parts for better theming -->
+  <!-- Then show the date in parts for better theming. -->
   <div class="date-in-parts">
     <span class="day"><?php echo date("j", $node->created); ?></span>
     <span class="month"><?php echo date("M", $node->created); ?></span>
     <span class="year"><?php echo date("Y", $node->created); ?></span>
   </div><!--//date-in-parts -->
-  <?php endif; ?>
   </div><!--//submit-wrapper-->
+  <?php endif; ?>
+
 
     <div<?php print $content_attributes; ?>>
         <?php
