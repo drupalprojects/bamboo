@@ -9,6 +9,7 @@ engine = phptemplate
 stylesheets[all][] = css/reset.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/design.css
+stylesheets[all][] = css/responsive.css
 
 ; Scripts --------------------
 scripts[] = js/scripts.js
@@ -26,7 +27,6 @@ regions[help]           = Help
 regions[footer_first]   = Footer first
 regions[footer_second]  = Footer second
 regions[footer_third]   = Footer third
-regions[footer_fourth]  = Footer fourth
 
 ; Features --------------------
 features[] = logo
