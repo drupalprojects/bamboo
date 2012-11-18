@@ -5,6 +5,7 @@
 
 body {
   font: 100.01%/1.5 Open Sans, Arial, Century gothic, sans-serif;
+  color: #525252;
 }
 
 article,
@@ -473,7 +474,7 @@ footer {
 .submitted {
   background: none;
   border-radius: 4px;
-  color: #383838;
+  color: #6a6a6a;
   display: block;
   font-size: .89em;
   font-weight: bold;

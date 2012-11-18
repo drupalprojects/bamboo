@@ -39,6 +39,7 @@ features[] = main_menu
 
 ; Deafult settings --------------
 
+settings[bamboo_themelogo]  = 1
 settings[header_font_style]  = sans_serif
 settings[theme_color_palette]  = green_bamboo
 settings[theme_bg]  = light_fabric

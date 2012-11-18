@@ -1,6 +1,71 @@
 <?php
 
 /**
+ * Preprocesses the wrapping HTML.
+ *
+ * @param array &$vars
+ *   Template variables.
+ */
+function bamboo_preprocess_html(&$vars) {
+
+  // Add a body class is the site name is hidden.
+  if (theme_get_setting('toggle_name') == FALSE) {
+    $vars['classes_array'][] = 'site-name-hidden';
+  }
+
+  // Add IE 8 fixes style sheet.
+  drupal_add_css(path_to_theme() . '/css/ie8-fixes.css',
+    array(
+      'group' => CSS_THEME,
+      'browsers' =>
+      array(
+        'IE' => 'lte IE 8',
+        '!IE' => FALSE),
+      'preprocess' => FALSE));
+
+  // Extra body classes for theme variables
+  // The slideshow style.
+  $file = theme_get_setting('choose_slideshow');
+  $vars['classes_array'][] = drupal_html_class('slideshow-' . $file);
+
+  // The background.
+  // $file = theme_get_setting('theme_bg') . '-style';
+  $file = theme_get_setting('theme_bg');
+  /* drupal_add_css(path_to_theme() . '/css/'.
+  $file, array('group' => CSS_THEME, 'weight' =>
+  115,'browsers' => array(), 'preprocess' => FALSE)); */
+  $vars['classes_array'][] = drupal_html_class('bg-' . $file);
+
+  // The Color Palette.
+  $file = theme_get_setting('theme_color_palette');
+  $vars['classes_array'][] = drupal_html_class('color-palette-' . $file);
+
+  // The header font style.
+  $file = theme_get_setting('header_font_style');
+  $vars['classes_array'][] = drupal_html_class('header-font-' . $file);
+
+
+
+  if (!$vars['is_front']) {
+    // Add unique class for each page.
+    $path = drupal_get_path_alias($_GET['q']);
+    // Add unique class for each website section.
+    list($section,) = explode('/', $path, 2);
+    $arg = explode('/', $_GET['q']);
+    if ($arg[0] == 'node' && isset($arg[1])) {
+      if ($arg[1] == 'add') {
+        $section = 'node-add';
+      }
+      elseif (isset($arg[2]) && is_numeric($arg[1]) && ($arg[2] == 'edit' || $arg[2] == 'delete')) {
+        $section = 'node-' . $arg[2];
+      }
+    }
+    $vars['classes_array'][] = drupal_html_class('section-' . $section);
+  }
+}
+
+
+/**
  * @file
  * Custom functions for the theme
  */
@@ -78,6 +143,12 @@ function bamboo_preprocess_page(&$vars) {
     $vars['main_menu'] = FALSE;
   }
 
+  // If the default logo is used, then determine which color.
+  $file = theme_get_setting('theme_color_palette');
+  if (theme_get_setting('bamboo_themelogo') == TRUE) {
+    $vars['logo'] = base_path() . path_to_theme() . '/images/' . $file . '-logo.png';
+  }
+
 }
 
 /**
@@ -115,10 +186,12 @@ function bamboo_preprocess_node(&$vars) {
     $vars['classes_array'][] = 'node-teaser';
   }
 
+  // Some nice expanded classes for Nodes.
   $vars['attributes_array']['role'][] = 'article';
   $vars['title_attributes_array']['class'][] = 'article-title';
   $vars['content_attributes_array']['class'][] = 'article-content';
 
+  // Show only the username in submitted, the date is handled by node.tpl.php.
   $vars['submitted'] = t('Submitted by !username',
     array('!username' => $vars['name']));
 }
@@ -158,67 +231,5 @@ if (drupal_is_front_page()) {
   // If beta theme.
   if (theme_get_setting('choose_slideshow') == 'beta') {
     drupal_add_css(drupal_get_path('theme', 'bamboo') . '/css/flexslider-beta.css');
-  }
-}
-
-/**
- * Preprocesses the wrapping HTML.
- *
- * @param array &$vars
- *   Template variables.
- */
-function bamboo_preprocess_html(&$vars) {
-
-  // Add a body class is the site name is hidden.
-  if (theme_get_setting('toggle_name') == FALSE) {
-    $vars['classes_array'][] = 'site-name-hidden';
-  }
-
-  // Add IE 8 fixes style sheet.
-  drupal_add_css(path_to_theme() . '/css/ie8-fixes.css',
-    array(
-      'group' => CSS_THEME,
-      'browsers' =>
-      array(
-        'IE' => 'lte IE 8',
-        '!IE' => FALSE),
-      'preprocess' => FALSE));
-
-  // Extra body classes for theme variables
-  // The slideshow style.
-  $file = theme_get_setting('choose_slideshow');
-  $vars['classes_array'][] = drupal_html_class('slideshow-' . $file);
-
-  // The background.
-  // $file = theme_get_setting('theme_bg') . '-style';
-  $file = theme_get_setting('theme_bg');
-  /* drupal_add_css(path_to_theme() . '/css/'.
-  $file, array('group' => CSS_THEME, 'weight' =>
-  115,'browsers' => array(), 'preprocess' => FALSE)); */
-  $vars['classes_array'][] = drupal_html_class('bg-' . $file);
-
-  // The Color Palette.
-  $file = theme_get_setting('theme_color_palette');
-  $vars['classes_array'][] = drupal_html_class('color-palette-' . $file);
-
-  // The header font style.
-  $file = theme_get_setting('header_font_style');
-  $vars['classes_array'][] = drupal_html_class('header-font-' . $file);
-
-  if (!$vars['is_front']) {
-    // Add unique class for each page.
-    $path = drupal_get_path_alias($_GET['q']);
-    // Add unique class for each website section.
-    list($section,) = explode('/', $path, 2);
-    $arg = explode('/', $_GET['q']);
-    if ($arg[0] == 'node' && isset($arg[1])) {
-      if ($arg[1] == 'add') {
-        $section = 'node-add';
-      }
-      elseif (isset($arg[2]) && is_numeric($arg[1]) && ($arg[2] == 'edit' || $arg[2] == 'delete')) {
-        $section = 'node-' . $arg[2];
-      }
-    }
-    $vars['classes_array'][] = drupal_html_class('section-' . $section);
   }
 }

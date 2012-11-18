@@ -51,7 +51,7 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     '#options' => array(
       'green_bamboo' => t('Green bamboo'),
       'warm_purple' => t('Warm purple'),
-      'dark_turquoise' => t('Dark turquoise'),
+      'dark_rust' => t('Dark rust'),
     ),
   );
 
@@ -64,4 +64,11 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
       'serif' => t('Serif'),
     ),
   );
+
+  $form['bamboo_settings']['general_settings']['bamboo_themelogo'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Use theme Logo? (check for yes, uncheck to upload your own logo!)'),
+    '#default_value' => theme_get_setting('bamboo_themelogo', 'bamboo'),
+  );
+
 }
