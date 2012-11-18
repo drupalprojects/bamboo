@@ -1,25 +1,25 @@
-Version 1.4, August 31, 2012
+Version 1.5, November 18, 2012
 
 -- SUMMARY --
 
-Bamboo is a bespoke responsive Drupal 7 theme with an elegant home page
-slideshow, and allows for a choice of backgrounds and color palettes in the
-theme settings.bamboo is aimed at users who want to get a theme up and running
+Bamboo is a responsive Drupal 7 theme that allows for a choice of backgrounds, color palettes, and fonts
+in the theme's settings page. Bamboo is aimed at users who want to get a theme up and running
 fast, and may not want to take the time to create a sub-theme and fuss about
-with regions, settings, media queries, and other super technical things. I
-designed with this type of user in mind, so it may not be for the developer per
-se. This theme also does not require any base theme.
+with regions, settings, media queries, and other super technical things. It's also aimed at the
+casual Drupal user who has some familiarity with building sites. This is designed with this type of user
+in mind, so it may not be for the developer per se who would most likely use Omega or Zen.
+This theme also does not require any base theme.
 
 -- FEATURES --
 
 - Google Fonts included with a choice of Fonts (e.g, choose sans-serif or serif
 for headers)
 
-- Home page slide show (Flexslider, choice of 2 styles)
-
 - Choice of several backgrounds and textures
 
 - Choice of three color palettes
+
+- JQuery Image captions on default imagefield in Article content type
 
 - Responsive for phone, tablet, and desktop using media queries
 
@@ -31,7 +31,7 @@ for headers)
 
 - CSS3 PIE support for CSS3 features in IE8.
 *** See the Notes below in regard to
-installation  and usage of CSS3 PIE
+installation  and usage for CSS3 PIE
 
 -- REQUIREMENTS --
 
@@ -60,14 +60,12 @@ or admin/appearance/settings/bamboo
 
 - Header font style (serif or sans-serif) settings
 
-- Slideshow settings: choose to show a slideshow or not on the homepage and also
-choose which style. Expand slideshow fieldsets to adjust node paths for links
-from the slideshow.
+- Choose to use the default theme logo and it will change colors with the color palette change
 
 -- CUSTOMIZATION --
 
 * As with any other Drupal theme you are able to customize just about every
-aspect of this theme.
+aspect of this theme but some nice defaults are provided out of the box.
 
 - drupal.org theme guide is here : http://drupal.org/documentation/theme
 
@@ -89,16 +87,13 @@ http://css3pie.com/documentation/known-issues
 - Media Queries will not work in IE8 but IE8 gracefully degrades to
 a 960 layout.
 
-- The photos in the slideshow are my own, so there shouldn't be issues regarding
-to copyright et al; I am giving full usage rights if someone wants to keep them
-in the theme, but of course feel free to use your own. You can see more at
-http://highrockphoto.com/
-
 - Inspiration for this theme comes from my surroundings in glorious sunny
 Southern California!
 
 ------------------------
 Danny Englander
+Drupal Themer and Photographer
 High Rock Media
 San Diego, California
 http://highrockmedia.com
+http://highrockphoto.com

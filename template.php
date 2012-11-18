@@ -23,10 +23,7 @@ function bamboo_preprocess_html(&$vars) {
         '!IE' => FALSE),
       'preprocess' => FALSE));
 
-  // Extra body classes for theme variables
-  // The slideshow style.
-  $file = theme_get_setting('choose_slideshow');
-  $vars['classes_array'][] = drupal_html_class('slideshow-' . $file);
+  // Extra body classes for theme variables.
 
   // The background.
   // $file = theme_get_setting('theme_bg') . '-style';
@@ -143,7 +140,7 @@ function bamboo_preprocess_page(&$vars) {
     $vars['main_menu'] = FALSE;
   }
 
-  // If the default logo is used, then determine which color.
+  // If the default logo is used, then determine which color and set the path.
   $file = theme_get_setting('theme_color_palette');
   if (theme_get_setting('bamboo_themelogo') == TRUE) {
     $vars['logo'] = base_path() . path_to_theme() . '/images/' . $file . '-logo.png';
@@ -215,21 +212,4 @@ function bamboo_page_alter($page) {
     ),
   );
   drupal_add_html_head($viewport, 'viewport');
-}
-
-/**
- * Add javascript files for front-page jquery slideshow.
- */
-if (drupal_is_front_page()) {
-  drupal_add_js(drupal_get_path('theme', 'bamboo') . '/js/jquery.flexslider-min.js');
-
-  // If alpha theme.
-  if (theme_get_setting('choose_slideshow') == 'alpha') {
-    drupal_add_css(drupal_get_path('theme', 'bamboo') . '/css/flexslider-alpha.css');
-  }
-
-  // If beta theme.
-  if (theme_get_setting('choose_slideshow') == 'beta') {
-    drupal_add_css(drupal_get_path('theme', 'bamboo') . '/css/flexslider-beta.css');
-  }
 }
