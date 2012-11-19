@@ -2,13 +2,17 @@ Version 1.5, November 18, 2012
 
 -- SUMMARY --
 
-Bamboo is a responsive Drupal 7 theme that allows for a choice of backgrounds, color palettes, and fonts
-in the theme's settings page. Bamboo is aimed at users who want to get a theme up and running
-fast, and may not want to take the time to create a sub-theme and fuss about
-with regions, settings, media queries, and other super technical things. It's also aimed at the
-casual Drupal user who has some familiarity with building sites. This is designed with this type of user
-in mind, so it may not be for the developer per se who would most likely use Omega or Zen.
-This theme also does not require any base theme.
+Bamboo is a responsive Drupal 7 theme based on the CSS Skeleton Framework that allows
+for a choice of backgrounds, color palettes, and fonts in the theme's
+settings page. Bamboo is aimed at users who want to get a theme up and
+running fast, and may not want to take the time to create a sub-theme and
+fuss about with regions, settings, media queries, and other super technical
+things. It's also aimed at the casual Drupal user who has some familiarity
+with building sites. This is designed with this type of user in mind, so it
+may not be for the developer per se who would most likely use Omega or Zen.
+This theme also does not require any base theme. There will be an online
+demo soon and I considering offering some downloadable Features as
+well, i.e. "Slideshow", "Gallery", etc...
 
 -- FEATURES --
 
@@ -26,6 +30,8 @@ for headers)
 - PSD image template files included
 
 - Mobile friendly menu
+
+- Choice of Sidebar left or right
 
 - Drop down menus (for desktop)
 

@@ -66,7 +66,7 @@
 ?>
 
 <header id="head" role="banner" class="container">
-  <hgroup class="nine columns alpha">
+  <hgroup class="eleven columns alpha">
 
     <div id="logo">
       <?php if ($logo): ?><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>

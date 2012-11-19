@@ -41,6 +41,14 @@ function bamboo_preprocess_html(&$vars) {
   $file = theme_get_setting('header_font_style');
   $vars['classes_array'][] = drupal_html_class('header-font-' . $file);
 
+  // The body font style.
+  $file = theme_get_setting('body_font_style');
+  $vars['classes_array'][] = drupal_html_class('body-font-' . $file);
+
+  // Sidebar location.
+  $file = theme_get_setting('theme_sidebar_location');
+  $vars['classes_array'][] = drupal_html_class($file);
+
 
 
   if (!$vars['is_front']) {

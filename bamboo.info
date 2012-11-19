@@ -39,7 +39,9 @@ features[] = main_menu
 ; Deafult settings --------------
 
 settings[bamboo_themelogo]  = 1
+settings[breadcrumbs]  = 1
+settings[theme_sidebar_location]  = sidebar_right
 settings[header_font_style]  = sans_serif
+settings[body_font_style]  = sans_serif
 settings[theme_color_palette]  = green_bamboo
 settings[theme_bg]  = light_fabric
-settings[breadcrumbs]  = 1

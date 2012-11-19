@@ -1,21 +1,37 @@
 /* Design and Colors */
 /* Get Google fonts */
+/* http://www.google.com/webfonts */
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700);
 @import url(http://fonts.googleapis.com/css?family=IM+Fell+English:400,400italic);
 @import url(http://fonts.googleapis.com/css?family=Lusitana:400,700);
+@import url(http://fonts.googleapis.com/css?family=Rosarivo:400,400italic&subset=latin,latin-ext);
 /* font-family: 'Open Sans', sans-serif; */
 /* font-family: 'IM Fell English', serif; */
 /* font-family: 'Lusitana', serif;*/
+/*font-family: 'Rosarivo', serif;*/
 
 /* color testing
 http://colorschemedesigner.com/#2811Tq1lCw0w0
 http://colorschemedesigner.com/#1462esPpUw0w0
 */
 
-body {
+body.body.body-font-sans-serif  {
   font-family: 'Open Sans', sans-serif;
+  font-size: 100.01%/1.5;
   font-weight: 400;
 }
+
+body.body-font-serif {
+  font-family: 'Rosarivo', serif;
+  font-size: 102%;
+
+}
+body.body-font-serif p,
+body.body-font-serif li {
+  line-height: 1.5em;
+}
+
 
 a {
   color: #8ea61f;
@@ -49,7 +65,7 @@ a:hover {
 .header-font-serif h4,
 .header-font-serif h5,
 .header-font-serif h6 {
-  font-family: Lusitana, serif;
+  font-family: 'Rosarivo', serif;
 }
 
 /* Defaults */
@@ -106,7 +122,8 @@ a:hover {
 .color-palette-green-bamboo .sidebar .block > h2,
 .color-palette-green-bamboo .date-in-parts,
 .color-palette-green-bamboo nav#main-menu ul li li a,
-.color-palette-green-bamboo input[type="submit"] {
+.color-palette-green-bamboo input[type="submit"],
+.color-palette-green-bamboo .comment_forbidden a{
   /* ie10 consumer preview */
   background-image: -ms-linear-gradient(bottom, #a6bb47 0%, #7e8e34 100%);
 
@@ -124,6 +141,8 @@ a:hover {
 
   /* w3c markup, ie10 release preview */
   background-image: linear-gradient(to top, #a6bb47 0%, #7e8e34 100%);
+
+  color: #fff;
 }
 
 .color-palette-green-bamboo h1,
@@ -141,7 +160,7 @@ a:hover {
 }
 
 .color-palette-green-bamboo input[type="submit"] {
-  background: #96a940;
+
   color: #fff;
 }
 

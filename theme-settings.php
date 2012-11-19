@@ -17,7 +17,7 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
 
   $form['bamboo_settings'] = array(
     '#type' => 'fieldset',
-    '#title' => t('bamboo Theme Settings'),
+    '#title' => t('Bamboo Theme Settings'),
     '#collapsible' => FALSE,
     '#collapsed' => FALSE,
   );
@@ -27,6 +27,13 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('Show breadcrumbs in a page'),
     '#default_value' => theme_get_setting('breadcrumbs', 'bamboo'),
     '#description' => t("Check this option to show breadcrumbs in page. Uncheck to hide."),
+  );
+
+  $form['bamboo_settings']['general_settings']['bamboo_themelogo'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Use theme Logo?'),
+    '#default_value' => theme_get_setting('bamboo_themelogo', 'bamboo'),
+    '#description' => t("Check for yes, uncheck to upload your own logo!"),
   );
 
   $form['bamboo_settings']['general_settings']['theme_bg_config']['theme_bg'] = array(
@@ -65,10 +72,26 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     ),
   );
 
-  $form['bamboo_settings']['general_settings']['bamboo_themelogo'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Use theme Logo? (check for yes, uncheck to upload your own logo!)'),
-    '#default_value' => theme_get_setting('bamboo_themelogo', 'bamboo'),
+  $form['bamboo_settings']['general_settings']['body_font_style'] = array(
+    '#type' => 'select',
+    '#title' => t('Choose a body font style'),
+    '#default_value' => theme_get_setting('body_font_style'),
+    '#options' => array(
+      'sans_serif' => t('Sans-Serif'),
+      'serif' => t('Serif'),
+    ),
+  );
+
+  $form['bamboo_settings']['general_settings']['general_settings']['theme_sidebar_location'] = array(
+    '#type' => 'select',
+    '#title' => t('Sidebar location'),
+    '#default_value' => theme_get_setting('theme_sidebar_location'),
+    '#description' => t("Choose where you would like your sidebar, left or right. Either way for mobile, it
+      will flow underneath the content area."),
+    '#options' => array(
+      'sidebar_right' => t('Right'),
+      'sidebar_left' => t('Left'),
+    ),
   );
 
 }

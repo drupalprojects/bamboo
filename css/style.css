@@ -4,7 +4,6 @@
  */
 
 body {
-  font: 100.01%/1.5 Open Sans, Arial, Century gothic, sans-serif;
   color: #525252;
 }
 
@@ -555,7 +554,7 @@ input.form-radio {
 }
 
 .links.node-links ul li:before {
-  content: "\00bb";
+/*  content: "\00bb";*/
   padding-right: 8px;
 }
 
@@ -985,4 +984,8 @@ nav#main-menu ul li li.last a {
 
 .front .img-caption {
   text-align: center;
+}
+
+.sidebar-left #content-wrapper .columns {
+  float: right;
 }
