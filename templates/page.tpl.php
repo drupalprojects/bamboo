@@ -66,7 +66,7 @@
 ?>
 
 <header id="head" role="banner" class="container">
-  <hgroup class="eleven columns alpha">
+  <hgroup class="ten columns alpha">
 
     <div id="logo">
       <?php if ($logo): ?><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>
@@ -79,10 +79,18 @@
       <h1 id="site-title"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <?php print $site_name; ?></a></h1>
       <?php if ($site_slogan): ?>
-        <div class="site-slogan"><?php print $site_slogan; ?></div><!--site slogan--><?php endif; ?>
+        <div class="site-slogan"><?php print $site_slogan; ?></div><!--site slogan-->
+      <?php endif; ?>
     </div>
 
   </hgroup>
+
+<div id="top-links" class="six columns omega">
+  <?php if ($page['top_links']): ?>
+    <?php print render($page['top_links']); ?>
+  <?php endif; ?>
+</div>
+
   <div class="clear"></div>
   <nav id="main-menu" role="navigation">
     <a class="nav-toggle" href="#">Navigation</a>
@@ -106,11 +114,17 @@
       <?php endif; ?>
   <?php endif; ?>
 
-  <div id="breadcrumbs"><?php if (theme_get_setting('breadcrumbs', 'bamboo')): ?>
-    <?php if ($breadcrumb): print $breadcrumb;
-    endif;
-    ?>
-    <?php endif; ?></div>
+  <?php if ($breadcrumb): ?>
+    <div id="breadcrumbs">
+      <?php print $breadcrumb; ?>
+    </div>
+  <?php endif; ?>
+
+  <div id="hero" class="sixteen columns">
+    <?php if ($page['hero']): ?>
+      <?php print render($page['hero']); ?>
+    <?php endif; ?>
+  </div>
 
   <?php
   // Define and divide the preface page regions.

@@ -302,7 +302,7 @@ body.bg-retro {
 }
 
 body.bg-dark-linen #colophon {
-  opacity:0.4;
+/*  opacity:0.4;*/
   /* ie10 consumer preview */
   background-image: -ms-linear-gradient(bottom, #cfcfcf 0%, #9c9c9c 100%);
 

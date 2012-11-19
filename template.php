@@ -116,14 +116,20 @@ function bamboo_preprocess_username(&$vars) {
  * Insert themed breadcrumb page navigation at top of the node content.
  */
 function bamboo_breadcrumb($vars) {
-  $breadcrumb = $vars['breadcrumb'];
-  if (!empty($breadcrumb)) {
-    // Use CSS to hide titile .element-invisible.
-    $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
-    // Comment below line to hide current page to breadcrumb.
-    $breadcrumb[] = drupal_get_title();
-    $output .= '<nav class="breadcrumb">' . implode(' » ', $breadcrumb) . '</nav>';
-    return $output;
+
+  // Show breadcrumbs if checked.
+  if (theme_get_setting('breadcrumbs') == 1) {
+
+    // Theme the breadcrumbs.
+    $breadcrumb = $vars['breadcrumb'];
+    if (!empty($breadcrumb)) {
+      // Use CSS to hide titile .element-invisible.
+      $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
+      // Comment below line to hide current page to breadcrumb.
+      $breadcrumb[] = drupal_get_title();
+      $output .= '<nav class="breadcrumb">' . implode(' » ', $breadcrumb) . '</nav>';
+      return $output;
+    }
   }
 }
 

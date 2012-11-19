@@ -16,6 +16,8 @@ scripts[] = js/scripts.js
 
 ; Regions --------------------
 regions[sidebar_first]  = Sidebar first
+regions[hero]           = Hero
+regions[top_links]      = Top Links
 regions[header]         = Header
 regions[front_welcome]  = Front welcome
 regions[content]        = Content
