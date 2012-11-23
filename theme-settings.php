@@ -41,13 +41,20 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('Choose a background'),
     '#default_value' => theme_get_setting('theme_bg'),
     '#options' => array(
-      'light_gray' => t('Light gray'),
-      'med_gray' => t('Medium gray'),
+      'gray_gradient' => t('Gray gradient'),
       'light_fabric' => t('Light fabric'),
       'dark_linen' => t('Dark linen'),
       'light_cloth' => t('Light cloth'),
       'tiles' => t('Tiles'),
-      'retro' => t('Retro'),
+      'retro1' => t('Retro 1'),
+      'retro2' => t('Retro 2'),
+      'retro3' => t('Retro 3'),
+      'retro4' => t('Retro 4'),
+      'abstract1' => t('Abstract pattern 1'),
+      'abstract2' => t('Abstract pattern 2'),
+      'abstract3' => t('Abstract pattern 3'),
+      'abstract4' => t('Abstract pattern 4'),
+      'abstract5' => t('Abstract pattern 5'),
     ),
   );
 

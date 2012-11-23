@@ -69,10 +69,12 @@
   <hgroup class="ten columns alpha">
 
     <div id="logo">
-      <?php if ($logo): ?><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>
-           <?php print t('&nbsp;» Home Page'); ?>"><img
-            src="<?php print $logo; ?>"
-            alt="<?php print $site_name; ?><?php print t(' » Home Page'); ?>"/></a><?php endif; ?>
+      <?php if ($logo): ?>
+        <a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>
+           <?php print t('&nbsp;» Home Page'); ?>">
+        <img id="logo-img" src="<?php print $logo; ?>" alt="<?php print $site_name; ?>
+        <?php print t(' » Home Page'); ?>"/></a>
+      <?php endif; ?>
     </div>
 
     <div id="site-title-wrapper">

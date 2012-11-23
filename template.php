@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Preprocesses the wrapping HTML.
  *
@@ -7,6 +6,12 @@
  *   Template variables.
  */
 function bamboo_preprocess_html(&$vars) {
+
+  // Demo stuff
+  drupal_add_js('sites/all/libraries/jquery-cookie/jquery.cookie.js');
+  drupal_add_js(drupal_get_path('theme', 'bamboo') .'/demo/demo.js', 'file');
+  drupal_add_css(drupal_get_path('theme', 'bamboo') .'/demo/demo.css', 'file');
+  // End demo stuff.
 
   // Add a body class is the site name is hidden.
   if (theme_get_setting('toggle_name') == FALSE) {
@@ -24,7 +29,6 @@ function bamboo_preprocess_html(&$vars) {
       'preprocess' => FALSE));
 
   // Extra body classes for theme variables.
-
   // The background.
   // $file = theme_get_setting('theme_bg') . '-style';
   $file = theme_get_setting('theme_bg');
@@ -49,8 +53,6 @@ function bamboo_preprocess_html(&$vars) {
   $file = theme_get_setting('theme_sidebar_location');
   $vars['classes_array'][] = drupal_html_class($file);
 
-
-
   if (!$vars['is_front']) {
     // Add unique class for each page.
     $path = drupal_get_path_alias($_GET['q']);
@@ -68,7 +70,6 @@ function bamboo_preprocess_html(&$vars) {
     $vars['classes_array'][] = drupal_html_class('section-' . $section);
   }
 }
-
 
 /**
  * @file

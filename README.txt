@@ -2,17 +2,17 @@ Version 1.5, November 18, 2012
 
 -- SUMMARY --
 
-Bamboo is a responsive Drupal 7 theme based on the CSS Skeleton Framework that allows
-for a choice of backgrounds, color palettes, and fonts in the theme's
-settings page. Bamboo is aimed at users who want to get a theme up and
-running fast, and may not want to take the time to create a sub-theme and
-fuss about with regions, settings, media queries, and other super technical
-things. It's also aimed at the casual Drupal user who has some familiarity
-with building sites. This is designed with this type of user in mind, so it
-may not be for the developer per se who would most likely use Omega or Zen.
-This theme also does not require any base theme. There will be an online
-demo soon and I considering offering some downloadable Features as
-well, i.e. "Slideshow", "Gallery", etc...
+Bamboo is a responsive Drupal 7 theme based on the CSS Skeleton Framework
+that allows for a choice of backgrounds, color palettes, and fonts in the
+theme's settings page. Bamboo is aimed at users who want to get a theme up
+and running fast, and may not want to take the time to create a sub-theme
+and fuss about with regions, settings, media queries, and other super
+technical things. It's also aimed at the casual Drupal user who has some
+familiarity with building sites. This is designed with this type of user in
+mind, so it may not be for the developer per se who would most likely use
+Omega or Zen. This theme also does not require any base theme. There will
+be an online demo soon and I considering offering some downloadable
+Features as well, i.e. "Slideshow", "Gallery", etc...
 
 -- FEATURES --
 
@@ -34,6 +34,8 @@ for headers)
 - Choice of Sidebar left or right
 
 - Drop down menus (for desktop)
+
+- Default logo changes for each color palette
 
 - CSS3 PIE support for CSS3 features in IE8.
 *** See the Notes below in regard to
@@ -66,7 +68,8 @@ or admin/appearance/settings/bamboo
 
 - Header font style (serif or sans-serif) settings
 
-- Choose to use the default theme logo and it will change colors with the color palette change
+- Choose to use the default theme logo and
+    it will change colors with the color palette change
 
 -- CUSTOMIZATION --
 

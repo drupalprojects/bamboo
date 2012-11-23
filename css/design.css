@@ -11,12 +11,13 @@
 /* font-family: 'Lusitana', serif;*/
 /*font-family: 'Rosarivo', serif;*/
 
-/* color testing
-http://colorschemedesigner.com/#2811Tq1lCw0w0
-http://colorschemedesigner.com/#1462esPpUw0w0
+/* Resources
+http://www.studioludens.com/repper/pro/
+http://colorschemedesigner.com/
+http://ie.microsoft.com/testdrive/graphics/cssgradientbackgroundmaker/default.html
 */
 
-body.body.body-font-sans-serif  {
+body.body-font-sans-serif {
   font-family: 'Open Sans', sans-serif;
   font-size: 100.01%/1.5;
   font-weight: 400;
@@ -25,8 +26,8 @@ body.body.body-font-sans-serif  {
 body.body-font-serif {
   font-family: 'Rosarivo', serif;
   font-size: 102%;
-
 }
+
 body.body-font-serif p,
 body.body-font-serif li {
   line-height: 1.5em;
@@ -123,25 +124,19 @@ a:hover {
 .color-palette-green-bamboo .date-in-parts,
 .color-palette-green-bamboo nav#main-menu ul li li a,
 .color-palette-green-bamboo input[type="submit"],
-.color-palette-green-bamboo .comment_forbidden a{
+.color-palette-green-bamboo .comment_forbidden a {
   /* ie10 consumer preview */
   background-image: -ms-linear-gradient(bottom, #a6bb47 0%, #7e8e34 100%);
-
   /* mozilla firefox */
   background-image: -moz-linear-gradient(bottom, #a6bb47 0%, #7e8e34 100%);
-
   /* opera */
   background-image: -o-linear-gradient(bottom, #a6bb47 0%, #7e8e34 100%);
-
   /* webkit (safari/chrome 10) */
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a6bb47), color-stop(1, #7e8e34));
-
   /* webkit (chrome 11+) */
   background-image: -webkit-linear-gradient(bottom, #a6bb47 0%, #7e8e34 100%);
-
   /* w3c markup, ie10 release preview */
   background-image: linear-gradient(to top, #a6bb47 0%, #7e8e34 100%);
-
   color: #fff;
 }
 
@@ -160,14 +155,12 @@ a:hover {
 }
 
 .color-palette-green-bamboo input[type="submit"] {
-
   color: #fff;
 }
 
 .color-palette-green-bamboo input[type="submit"]:hover {
   background: #999;
 }
-
 
 /* Dark Rust */
 .color-palette-dark-rust a {
@@ -184,19 +177,14 @@ a:hover {
 .color-palette-dark-rust input[type="submit"] {
   /* ie10 consumer preview */
   background-image: -ms-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
-
   /* mozilla firefox */
   background-image: -moz-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
-
   /* opera */
   background-image: -o-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
-
   /* webkit (safari/chrome 10) */
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ce4c14), color-stop(1, #a7461c));
-
   /* webkit (chrome 11+) */
   background-image: -webkit-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
-
   /* w3c markup, ie10 release preview */
   background-image: linear-gradient(to top, #ce4c14 0%, #a7461c 100%);
 }
@@ -222,7 +210,6 @@ a:hover {
 }
 
 .color-palette-dark-rust input[type="submit"] {
-
   color: #fff;
 }
 
@@ -243,23 +230,18 @@ a:hover {
 .color-palette-warm-purple .date-in-parts,
 .color-palette-warm-purple nav#main-menu ul li li a,
 .color-palette-warm-purple input[type="submit"] {
-  /* IE10 Consumer Preview */
-  background-image: -ms-linear-gradient(top, #626584 0%, #494C62 100%);
-
-  /* Mozilla Firefox */
-  background-image: -moz-linear-gradient(top, #626584 0%, #494C62 100%);
-
-  /* Opera */
-  background-image: -o-linear-gradient(top, #626584 0%, #494C62 100%);
-
-  /* Webkit (Safari/Chrome 10) */
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #626584), color-stop(1, #494C62));
-
-  /* Webkit (Chrome 11+) */
-  background-image: -webkit-linear-gradient(top, #626584 0%, #494C62 100%);
-
-  /* W3C Markup, IE10 Release Preview */
-  background-image: linear-gradient(to bottom, #626584 0%, #494C62 100%);
+  /* ie10 consumer preview */
+  background-image: -ms-linear-gradient(top, #626584 0%, #494c62 100%);
+  /* mozilla firefox */
+  background-image: -moz-linear-gradient(top, #626584 0%, #494c62 100%);
+  /* opera */
+  background-image: -o-linear-gradient(top, #626584 0%, #494c62 100%);
+  /* webkit (safari/chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #626584), color-stop(1, #494c62));
+  /* webkit (chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #626584 0%, #494c62 100%);
+  /* w3c markup, ie10 release preview */
+  background-image: linear-gradient(to bottom, #626584 0%, #494c62 100%);
 }
 
 .color-palette-warm-purple h1,
@@ -271,53 +253,103 @@ a:hover {
   color: #626584;
 }
 
+/* End color palettes */
+
 /* Backgrounds */
 
-/* Fabric */
+body.bg-gray-gradient {
+  /* ie10 consumer preview */
+  background-image: -ms-linear-gradient(bottom, #e8e8e8 0%, #bababa 100%);
+  /* mozilla firefox */
+  background-image: -moz-linear-gradient(bottom, #e8e8e8 0%, #bababa 100%);
+  /* opera */
+  background-image: -o-linear-gradient(bottom, #e8e8e8 0%, #bababa 100%);
+  /* webkit (safari/chrome 10) */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e8e8e8), color-stop(1, #bababa));
+  /* webkit (chrome 11+) */
+  background-image: -webkit-linear-gradient(bottom, #e8e8e8 0%, #bababa 100%);
+  /* w3c markup, ie10 release preview */
+  background-image: linear-gradient(to top, #e8e8e8 0%, #bababa 100%);
+}
+
+body.bg-green-gradient {
+  /* ie10 consumer preview */
+  background-image: -ms-linear-gradient(top, #afbb7a 0%, #dbe9b6 100%);
+  /* mozilla firefox */
+  background-image: -moz-linear-gradient(top, #afbb7a 0%, #dbe9b6 100%);
+  /* opera */
+  background-image: -o-linear-gradient(top, #afbb7a 0%, #dbe9b6 100%);
+  /* webkit (safari/chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #afbb7a), color-stop(1, #dbe9b6));
+  /* webkit (chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #afbb7a 0%, #dbe9b6 100%);
+  /* w3c markup, ie10 release preview */
+  background-image: linear-gradient(to bottom, #afbb7a 0%, #dbe9b6 100%);
+}
+
 body.bg-light-fabric {
-  background: url(../images/bg-fabric.png) repeat fixed;
+  background: url("../images/bg-fabric.png") repeat fixed;
 }
 
-/* Cloth */
 body.bg-light-cloth {
-  background: url(../images/bg-cloth.png) repeat fixed;
+  background: url("../images/bg-cloth.png") repeat fixed;
 }
 
-/* Medium Gray */
-body.bg-med-gray {
-  background: #949494;
-}
-
-/* Dark Linen */
 body.bg-dark-linen {
-  background: url(../images/bg-dark-linen.png) repeat fixed;
+  background: url("../images/bg-dark-linen.png") repeat fixed;
 }
 
 body.bg-tiles {
   background: url("../images/bg-tiles.png") repeat fixed;
 }
 
-body.bg-retro {
-  background: url("../images/bg-retro.png") repeat fixed;
+body.bg-retro1 {
+  background: url("../images/bg-retro1.png") repeat fixed;
+}
+
+body.bg-retro2 {
+  background: url("../images/bg-retro2.png") repeat fixed;
+}
+
+body.bg-retro3 {
+  background: url("../images/bg-retro3.png") repeat fixed;
+}
+
+body.bg-retro4 {
+  background: url("../images/bg-retro4.png") repeat fixed;
+}
+
+body.bg-abstract1 {
+  background: url("../images/bg-abstract1.png") repeat fixed;
+}
+
+body.bg-abstract2 {
+  background: url("../images/bg-abstract2.png") repeat fixed;
+}
+
+body.bg-abstract3 {
+  background: url("../images/bg-abstract3.png") repeat fixed;
+}
+
+body.bg-abstract4 {
+  background: url("../images/bg-abstract4.png") repeat fixed;
+}
+
+body.bg-abstract5 {
+  background: url("../images/bg-abstract5.png") repeat fixed;
 }
 
 body.bg-dark-linen #colophon {
-/*  opacity:0.4;*/
   /* ie10 consumer preview */
   background-image: -ms-linear-gradient(bottom, #cfcfcf 0%, #9c9c9c 100%);
-
   /* mozilla firefox */
   background-image: -moz-linear-gradient(bottom, #cfcfcf 0%, #9c9c9c 100%);
-
   /* opera */
   background-image: -o-linear-gradient(bottom, #cfcfcf 0%, #9c9c9c 100%);
-
   /* webkit (safari/chrome 10) */
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #cfcfcf), color-stop(1, #9c9c9c));
-
   /* webkit (chrome 11+) */
   background-image: -webkit-linear-gradient(bottom, #cfcfcf 0%, #9c9c9c 100%);
-
   /* w3c markup, ie10 release preview */
   background-image: linear-gradient(to top, #cfcfcf 0%, #9c9c9c 100%);
 }
@@ -326,3 +358,5 @@ body.bg-dark-linen #colophon p,
 body.bg-dark-linen #colophon li {
   color: #333;
 }
+
+/* End backgrounds */

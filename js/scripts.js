@@ -54,7 +54,6 @@
           $(this).closest(".field-type-image .field-item").append("");
         }
   });
-
   }
 }
 })
