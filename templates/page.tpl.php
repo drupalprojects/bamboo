@@ -122,11 +122,11 @@
     </div>
   <?php endif; ?>
 
-  <div id="hero" class="sixteen columns">
     <?php if ($page['hero']): ?>
+    <div id="hero" class="sixteen columns">
       <?php print render($page['hero']); ?>
+    </div>
     <?php endif; ?>
-  </div>
 
   <?php
   // Define and divide the preface page regions.

@@ -182,7 +182,8 @@ em {
   font-style: italic;
 }
 
-ol {
+ol,
+ul {
   padding-left: 20px;
 }
 
@@ -213,13 +214,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 400;
   margin: 14px 0px 4px 0px;
   padding: 0;
 }
 
 h1 {
   font-size: 1.8em;
+  margin-bottom: .4em;
   margin-top: 0;
 }
 
@@ -341,13 +343,27 @@ nav#main-menu {
   width: 99%;
 }
 
-aside h2 {
+aside.sidebar .content ul li,
+.content article ul li {
+  list-style-image: url("../images/raquo.png");
+}
+
+.sidebar-right aside h2 {
   -moz-border-radius-topleft: 24px;
   -webkit-border-top-left-radius: 24px;
   -moz-border-radius-bottomleft: 24px;
   -webkit-border-bottom-left-radius: 24px;
   border-radius: 24px 0 0 24px;
   margin-right: -10px;
+}
+
+.sidebar-left aside h2 {
+  -moz-border-radius-topright: 24px;
+  -webkit-border-top-right-radius: 24px;
+  -moz-border-radius-bottomright: 24px;
+  -webkit-border-bottom-right-radius: 24px;
+  border-radius: 0 24px 24px 0;
+  margin-left: -10px;
 }
 
 header.container {
@@ -407,10 +423,6 @@ footer {
 #foot .block > h2,
 .region-content-top .block > h2 {
   font-size: 16px;
-}
-
-#sidebar-first {
-  margin-top: 25px;
 }
 
 .sidebar .block > h2 {
@@ -496,11 +508,11 @@ footer {
 }
 
 .links li a {
-  background-color: #e7e5e3;
+  background-color: #ddd;
   border-radius: 4px;
-  color: #100100;
   font-weight: normal;
-  padding: 4px 5px;
+  padding: 2px 10px 1px 10px;
+  text-transform: capitalize;
 }
 
 .links li a:hover {
@@ -558,10 +570,10 @@ input.form-radio {
   padding-right: 8px;
 }
 
-.region.region-content ul li,
+/*.region.region-content ul li,
 aside.sidebar ul li {
   list-style: none;
-}
+}*/
 
 ul.menu li {
   margin: 0;
@@ -661,7 +673,8 @@ ul.secondary a.active {
   display: inline-block;
   font-size: 12px;
   height: 22px;
-  padding: 0px 8px 0 16px;
+  padding: 2px 8px 0 16px;
+  text-transform: uppercase;
 }
 
 .field-name-field-tags .field-item {
@@ -744,10 +757,11 @@ h3.comment-title a {
 }
 
 .comment .submitted {
-  background: #e5e5e5;
+  border-radius: 4px;
   display: inline;
-  margin-bottom: 6px;
-  padding: 4px 10px;
+  padding: 3px;
+  text-transform: capitalize;
+  width: 100%;
 }
 
 .comment .user-picture {
@@ -760,6 +774,14 @@ h3.comment-title a {
 
 .comment-new-comments {
   display: none;
+}
+
+.field-name-comment-body {
+  margin-top: 10px;
+}
+
+li.comment_forbidden a {
+  text-transform: uppercase;
 }
 
 .item-list .pager li {
