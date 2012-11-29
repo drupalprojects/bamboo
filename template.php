@@ -7,12 +7,8 @@
  * @param array &$vars
  *   Template variables.
  */
+ 
 function bamboo_preprocess_html(&$vars) {
-
-  // Demo stuff
-  drupal_add_js('sites/all/libraries/jquery-cookie/jquery.cookie.js');
-  drupal_add_js(drupal_get_path('theme', 'bamboo') . '/demo/demo.js', 'file');
-  drupal_add_css(drupal_get_path('theme', 'bamboo') . '/demo/demo.css', 'file');
 
   // Add a body class is the site name is hidden.
   if (theme_get_setting('toggle_name') == FALSE) {
