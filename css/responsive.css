@@ -190,6 +190,21 @@
     margin-left: 1%;
   }
 
+  span.drop-arrow {
+    background: url('../images/arrows-ffffff.png') 10px -100px;
+    display: block;
+    height: 10px;
+    position: absolute;
+    right: 5px;
+    top: 13px;
+    width: 10px;
+  }
+
+  .sidebar-left .column,
+  .sidebar-left .columns {
+    margin-left: 0;
+  }
+
 }
 
 /* #Tablet (Landscape)
@@ -354,6 +369,11 @@
   .field-type-image {
     float: right;
     margin-left: 1%;
+  }
+
+  .sidebar-left .column,
+  .sidebar-left .columns {
+    margin-left: 0;
   }
 }
 

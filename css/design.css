@@ -17,16 +17,6 @@ http://colorschemedesigner.com/
 http://ie.microsoft.com/testdrive/graphics/cssgradientbackgroundmaker/default.html
 */
 
-body.body-font-serif {
-  font-family: 'Rosarivo', serif;
-  font-size: 102%;
-}
-
-body.body-font-serif p,
-body.body-font-serif li {
-  line-height: 1.5em;
-}
-
 body.body-font-sans-serif {
   font-family: 'Open Sans', sans-serif;
   font-size: 100.01%/1.5;
@@ -36,6 +26,17 @@ body.body-font-sans-serif {
 body.body-font-sans-serif p,
 body.body-font-sans-serif li {
   line-height: 1.5em;
+}
+
+body.body-font-serif {
+  font-family: 'Rosarivo', serif;
+  font-size: 102%;
+}
+
+body.body-font-serif p,
+body.body-font-serif li {
+  line-height: 1.5em;
+  font-size: .86em;
 }
 
 a {
@@ -53,8 +54,7 @@ a:hover {
   text-decoration: none;
 }
 
-/* Typography
-================================= */
+/* Typography */
 .header-font-sans-serif h1,
 .header-font-sans-serif h2,
 .header-font-sans-serif h3,
@@ -74,15 +74,24 @@ a:hover {
 }
 
 /* Defaults */
+
+.menu-navigation-container li a {
+  text-transform: uppercase;
+}
+
+.menu-navigation-container li li a {
+  text-transform: capitalize;
+}
+
+body.body-font-serif .menu-navigation-container ul.menu li a {
+  letter-spacing: .14em;
+}
+
 #main-menu li li a,
 #main-menu li li a:link,
 #main-menu li li a:visited {
   background-color: #152d43;
-}
-
-#main-menu li li a:hover,
-#main-menu li li a:active {
-  background: #01152a;
+  letter-spacing: 0;
 }
 
 .date-in-parts {
@@ -109,10 +118,6 @@ a:hover {
   color: #333;
 }
 
-.form-submit:hover {
-  background: #454444;
-}
-
 /* Color Palettes*/
 
 /* Green Bamboo */
@@ -126,9 +131,9 @@ a:hover {
 
 .color-palette-green-bamboo .sidebar .block > h2,
 .color-palette-green-bamboo .date-in-parts,
-.color-palette-green-bamboo nav#main-menu ul li li a,
 .color-palette-green-bamboo input[type="submit"],
-.color-palette-green-bamboo .comment_forbidden a {
+.color-palette-green-bamboo input[type="reset"],
+.color-palette-green-bamboo button {
   /* ie10 consumer preview */
   background-image: -ms-linear-gradient(bottom, #a6bb47 0%, #7e8e34 100%);
   /* mozilla firefox */
@@ -179,8 +184,19 @@ a:hover {
   color: #fff;
 }
 
-.color-palette-green-bamboo input[type="submit"]:hover {
+.color-palette-green-bamboo input[type="submit"]:hover,
+.color-palette-green-bamboo input[type="reset"]:hover,
+.color-palette-green-bamboo button:hover {
   background: #999;
+  cursor: pointer;
+}
+
+.color-palette-green-bamboo nav#main-menu ul li li a {
+  background: #899b39;
+}
+
+.color-palette-green-bamboo nav#main-menu ul li li a:hover {
+   background: #999;
 }
 
 /* Dark Rust */
@@ -195,7 +211,9 @@ a:hover {
 .color-palette-dark-rust .sidebar .block > h2,
 .color-palette-dark-rust .date-in-parts,
 .color-palette-dark-rust nav#main-menu ul li li a,
-.color-palette-dark-rust input[type="submit"] {
+.color-palette-dark-rust input[type="submit"],
+.color-palette-dark-rust input[type="reset"],
+.color-palette-dark-rust button {
   /* ie10 consumer preview */
   background-image: -ms-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
   /* mozilla firefox */
@@ -230,11 +248,18 @@ a:hover {
   background: #dedede url("../images/quote-turq.png") no-repeat;
 }
 
-.color-palette-dark-rust input[type="submit"] {
-  color: #fff;
+.color-palette-dark-rust input[type="submit"]:hover,
+.color-palette-dark-rust input[type="reset"]:hover,
+.color-palette-dark-rust button:hover {
+  background: #999;
+  cursor: pointer;
 }
 
-.color-palette-dark-rust input[type="submit"]:hover {
+.color-palette-dark-rust nav#main-menu ul li li a {
+  background: #b74819;
+}
+
+.color-palette-dark-rust nav#main-menu ul li li a:hover {
   background: #999;
 }
 
@@ -250,7 +275,9 @@ a:hover {
 .color-palette-warm-purple .sidebar .block > h2,
 .color-palette-warm-purple .date-in-parts,
 .color-palette-warm-purple nav#main-menu ul li li a,
-.color-palette-warm-purple input[type="submit"] {
+.color-palette-warm-purple input[type="submit"],
+input[type="reset"],
+button {
   /* ie10 consumer preview */
   background-image: -ms-linear-gradient(top, #626584 0%, #494c62 100%);
   /* mozilla firefox */
@@ -278,6 +305,21 @@ a:hover {
 .color-palette-warm-purple code {
   background: #7e76a3;
   color: #fff;
+}
+
+.color-palette-warm-purple input[type="submit"]:hover,
+.color-palette-warm-purple input[type="reset"]:hover,
+.color-palette-warm-purple button:hover {
+  background: #999;
+  cursor: pointer;
+}
+
+.color-palette-warm-purple nav#main-menu ul li li a {
+  background: #4d5067;
+}
+
+.color-palette-warm-purple nav#main-menu ul li li a:hover {
+  background: #999;
 }
 
 /* End color palettes */
@@ -382,7 +424,8 @@ body.bg-dark-linen #colophon {
 }
 
 body.bg-dark-linen #colophon p,
-body.bg-dark-linen #colophon li {
+body.bg-dark-linen #colophon li,
+body.bg-dark-linen #colophon div {
   color: #333;
 }
 

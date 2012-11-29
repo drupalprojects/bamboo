@@ -98,32 +98,15 @@ hr {
   width: 100%;
 }
 
-input,
-select {
-  vertical-align: middle;
-}
-
-select {
-  border: 1px solid #acacac;
-  border-radius: 4px;
-  padding: 3px 4px;
-}
-
-.remove-margin {
-  margin-right: 0 !important;
-}
-
-fieldset {
-  border: 1px solid #ccc;
-  margin: 0 0 1.4615em;
-  padding: 1.5385em;
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
   margin-bottom: 15px;
   width: 100%;
+}
+
+.remove-margin {
+  margin-right: 0 !important;
 }
 
 th,
@@ -245,8 +228,7 @@ h6 {
   font-size: 1em;
 }
 
-/* Layout
-============================*/
+/* Layout */
 
 #wrapper {
   margin: 0px auto;
@@ -343,8 +325,8 @@ nav#main-menu {
   width: 99%;
 }
 
-aside.sidebar .content ul li,
-.content article ul li {
+aside.sidebar .block-content ul li,
+#content article ul li {
   list-style-image: url("../images/raquo.png");
 }
 
@@ -364,6 +346,14 @@ aside.sidebar .content ul li,
   -webkit-border-bottom-right-radius: 24px;
   border-radius: 0 24px 24px 0;
   margin-left: -10px;
+}
+
+footer#colophon h2 {
+  color: #eaeaea;
+}
+
+footer#colophon {
+  color: #eaeaea;
 }
 
 header.container {
@@ -515,29 +505,28 @@ footer {
   text-transform: capitalize;
 }
 
-.links li a:hover {
-  background-color: #d7d5d3;
-  color: #100101;
+.links li a:hover,
+ul.pager li:hover {
+  background-color: #999;
+  color: #fff;
+}
+ul.pager li a:hover {
+  color: #fff;
 }
 
-/*-------------------------------------------*
-/* Buttons, Form
-/*-------------------------------------------*/
+/* form elements */
 
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"],
+button {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
-  background: #67c1c9;
   border: 0;
   border-radius: 7px;
   color: #fff;
   font-size: .8em;
   padding: 7px 8px;
   text-transform: uppercase;
-}
-
-input[type="submit"]:hover {
-  background: #999;
   cursor: pointer;
 }
 
@@ -546,10 +535,45 @@ input.form-radio {
   vertical-align: baseline;
 }
 
-.form-text {
+.form-text,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   border: 1px solid #acacac;
-  border-radius: 3px;
-  padding: 4px 5px;
+  padding: 5px 8px;
+  font-size: 1em;
+  color: #666;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+label {
+  display: block;
+  font-size: .9em;
+  margin: .8em 0 .5em 0;
+}
+
+select {
+  border: 1px solid #acacac;
+  border-radius: 4px;
+  padding: 3px 4px;
+}
+
+fieldset {
+  border: 1px dotted #ccc;
+  margin: 0 0 1.4615em;
+  padding: 1.1em;
+}
+
+legend {
+  font-weight: bold;
 }
 
 /*-------------------------------------------*
@@ -570,10 +594,9 @@ input.form-radio {
   padding-right: 8px;
 }
 
-/*.region.region-content ul li,
-aside.sidebar ul li {
-  list-style: none;
-}*/
+#sidebar-first {
+  margin-top: 10px;
+}
 
 ul.menu li {
   margin: 0;
@@ -940,7 +963,7 @@ span.year {
   display: none;
   height: auto;
   margin: 0;
-  min-width: 190px;
+  min-width: 210px;
   padding: 0;
   position: absolute;
   z-index: 9999;
@@ -1011,3 +1034,4 @@ nav#main-menu ul li li.last a {
 .sidebar-left #content-wrapper .columns {
   float: right;
 }
+

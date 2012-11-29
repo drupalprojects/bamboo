@@ -5,12 +5,12 @@
 
 (function ($) {
 
-//add drupal 7 code
-  Drupal.behaviors.miscTheme = {
+// Add drupal 7 code.
+  Drupal.behaviors.miscBamboo = {
     attach:function (context, settings) {
-//end drupal calls
+// End drupal calls.
 
-// mobile menu
+// Mobile toggle menu.
   $('.nav-toggle').click(function () {
     $('#main-menu div ul:first-child').slideToggle(250);
       return false;
@@ -35,7 +35,7 @@
     });
   }
 
-// prepend the post date before the H1.
+// prepend the post date before the h1.
   $(".date-in-parts")
     .prependTo(".not-front.page-node #post-content");
 
@@ -54,6 +54,14 @@
           $(this).closest(".field-type-image .field-item").append("");
         }
   });
+
+// Add an "arrow" span to primary menus that are expanded.
+  $('#main-menu ul li').each(function() {
+    if ($(this).hasClass('expanded')) {
+      $(this).closest('li').append("<span class='drop-arrow'></span>").html();
+      }
+  });
+
   }
 }
 })
