@@ -42,10 +42,10 @@ documentation.
 - Choice of Sidebar left or right
 
 - Default logo changes for each color palette (you can also toggle this
-off and use your own logo.) *** Note, it's hard to anticipate what effect various
-shapes and sizes a custom uploaded logos will have on the theme so
-unfortunately support cannot be offered through the issue queue for things
-like this.
+off and use your own logo.) *** Note, it's hard to anticipate what effect
+various shapes and sizes a custom uploaded logos will have on the
+theme so unfortunately support cannot be offered through the issue
+queue for things like this.
 
 -- ADDITIONAL FEATURES --
 

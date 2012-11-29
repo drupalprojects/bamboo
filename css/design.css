@@ -35,8 +35,8 @@ body.body-font-serif {
 
 body.body-font-serif p,
 body.body-font-serif li {
-  line-height: 1.5em;
   font-size: .86em;
+  line-height: 1.5em;
 }
 
 a {
@@ -176,8 +176,8 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
 }
 
 .color-palette-green-bamboo .comment .submitted a {
-  color: #eaeaea;
   border-bottom: 1px dotted #333;
+  color: #eaeaea;
 }
 
 .color-palette-green-bamboo input[type="submit"] {
@@ -196,7 +196,7 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
 }
 
 .color-palette-green-bamboo nav#main-menu ul li li a:hover {
-   background: #999;
+  background: #999;
 }
 
 /* Dark Rust */

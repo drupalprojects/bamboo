@@ -544,9 +544,9 @@ input[type="email"] {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: 1px solid #acacac;
-  padding: 5px 8px;
-  font-size: 1em;
   color: #666;
+  font-size: 1em;
+  padding: 5px 8px;
 }
 
 input,
@@ -1034,4 +1034,3 @@ nav#main-menu ul li li.last a {
 .sidebar-left #content-wrapper .columns {
   float: right;
 }
-
