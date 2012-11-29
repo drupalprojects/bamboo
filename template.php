@@ -2,15 +2,14 @@
 
 /**
  * @file
- * Custom functions for the theme
+ * Template.php provides theme functions & overrides
  */
 
 /**
- * @param array &$vars
- * Template variables.
+ * Implements hook_preprocess_html().
  */
 function bamboo_preprocess_html(&$vars) {
-  // Add a body class is the site name is hidden.
+	// Add a body class is the site name is hidden.
   if (theme_get_setting('toggle_name') == FALSE) {
     $vars['classes_array'][] = 'site-name-hidden';
   }
