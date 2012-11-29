@@ -2,16 +2,14 @@
 
 /**
  * @file
- * Theme setting callbacks for the bamboo theme.
+ * theme-settings.php provides the custom theme settings
+ *
+ * Provides the checkboxes for the CSS overrides functionality
+ * as well as the serif/sans-serif style option.
  */
 
 /**
  * Implements hook_form_FORM_ID_alter().
- *
- * @param $form
- *   The form.
- * @param $form_state
- *   The form state.
  */
 function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
 
