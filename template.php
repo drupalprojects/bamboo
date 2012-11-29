@@ -2,10 +2,12 @@
 
 /**
  * @file
- * Preprocesses the wrapping HTML.
- *
+ * Custom functions for the theme
+ */
+
+/**
  * @param array &$vars
- *   Template variables.
+ * Template variables.
  */
 function bamboo_preprocess_html(&$vars) {
   // Add a body class is the site name is hidden.

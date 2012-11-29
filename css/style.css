@@ -524,10 +524,10 @@ button {
   border: 0;
   border-radius: 7px;
   color: #fff;
+  cursor: pointer;
   font-size: .8em;
   padding: 7px 8px;
   text-transform: uppercase;
-  cursor: pointer;
 }
 
 input.form-checkbox,
