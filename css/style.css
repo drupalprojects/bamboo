@@ -254,7 +254,7 @@ h6 {
 }
 
 nav#main-menu {
-  margin-top: 20px;
+  margin-top: 2px;
 }
 
 #site-title-wrapper {
@@ -1041,4 +1041,9 @@ nav#main-menu ul li li.last a {
 
 summary {
   cursor: pointer;
+}
+
+#top-links {
+  margin-top: 11px;
+  text-align: right;
 }
