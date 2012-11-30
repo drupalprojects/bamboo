@@ -163,16 +163,16 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
   background: #d2df95;
 }
 
-.comment.odd {
+.color-palette-green-bamboo .comment.odd {
   background: #d6ddb3;
 }
 
-.comment.even {
+.color-palette-green-bamboo .comment.even {
   background: #d8dbc9;
 }
 
 .color-palette-green-bamboo .comment .submitted {
-  color: #fff;
+  color: #899a39;
 }
 
 .color-palette-green-bamboo .comment .submitted a {
@@ -243,6 +243,14 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
   color: #eaeaea;
 }
 
+.color-palette-dark-rust .comment.odd {
+  background: #d9bc9b;
+}
+
+.color-palette-dark-rust .comment.even {
+  background: #cac1b6;
+}
+
 .color-palette-dark-rust blockquote,
 .color-palette-dark-rust q {
   background: #dedede url("../images/quote-turq.png") no-repeat;
@@ -305,6 +313,15 @@ button {
 .color-palette-warm-purple code {
   background: #7e76a3;
   color: #fff;
+}
+
+
+.color-palette-warm-purple .comment.odd {
+  background: #cecdd2;
+}
+
+.color-palette-warm-purple .comment.even {
+  background: #e0dee8;
 }
 
 .color-palette-warm-purple input[type="submit"]:hover,

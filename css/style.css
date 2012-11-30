@@ -1034,3 +1034,11 @@ nav#main-menu ul li li.last a {
 .sidebar-left #content-wrapper .columns {
   float: right;
 }
+
+.views-label.views-label-title {
+  font-weight: bold;
+}
+
+summary {
+  cursor: pointer;
+}
