@@ -1,0 +1,71 @@
+/* Slideshow theming for downloadable feature */
+
+.bamboo-slideshow .flex-nav-container {
+  margin-bottom: 0;
+}
+
+.bamboo-slideshow .flexslider {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  border: 1px solid #999;
+  box-shadow: none;
+  margin-bottom: 10px;
+}
+
+.bamboo-slideshow .views-field.views-field-title {
+  background: #333;
+  background: -moz-repeating-linear-gradient(#555, #333 40px);
+  background: -webkit-repeating-linear-gradient(#555, #333 60px);
+  background: -o-repeating-linear-gradient(#555, #333 40px);
+  background: -ms-repeating-linear-gradient(#555, #333 40px);
+  background: repeating-linear-gradient(#555, #333 40px);
+  padding: .01em 0;
+  border-bottom: 2px dotted #fff;
+}
+
+.bamboo-slideshow .views-field.views-field-title h2 {
+  line-height: .5em;
+  padding: 0 1px 12px 12px;
+}
+
+.bamboo-slideshow .views-field.views-field-title h2 a {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #eaeaea;
+}
+
+.bamboo-slideshow .views-field.views-field-title h2 a:hover {
+  color: #fff;
+}
+
+.bamboo-slideshow .views-field.views-field-field-slide-text {
+  background: #b74819;
+  border-top: 2px dotted #fff;
+  color: #fff;
+}
+
+.bamboo-slideshow .views-field.views-field-field-slide-text p {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.bamboo-slideshow .views-field-field-slide-text .field-content {
+  padding: 10px;
+}
+
+.bamboo-slideshow .views-field.read-more a {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  background: #b74819;
+  border-radius: 8px;
+  bottom: 80px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: .1em;
+  opacity: 0.9;
+  padding: 7px;
+  position: absolute;
+  right: 10px;
+}

@@ -16,7 +16,7 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['bamboo_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Bamboo Theme Settings'),
-    '#collapsible' => FALSE,
+    '#collapsible' => TRUE,
     '#collapsed' => FALSE,
   );
 
@@ -88,7 +88,7 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     ),
   );
 
-  $form['bamboo_settings']['general_settings']['general_settings']['theme_sidebar_location'] = array(
+  $form['bamboo_settings']['general_settings']['theme_sidebar_location'] = array(
     '#type' => 'select',
     '#title' => t('Sidebar location'),
     '#default_value' => theme_get_setting('theme_sidebar_location'),
@@ -98,6 +98,20 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
       'sidebar_right' => t('Right'),
       'sidebar_left' => t('Left'),
     ),
+  );
+
+  $form['additional_settings'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Additional Bamboo Settings'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+
+  $form['additional_settings']['other_settings']['bamboo_slideshowcss'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Using bamboo slideshow feature?'),
+    '#default_value' => theme_get_setting('bamboo_slideshowcss', 'bamboo'),
+    '#description' => t("Only check this box if you have downloaded and activated the slideshow feature."),
   );
 
 }

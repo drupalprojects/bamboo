@@ -190,19 +190,13 @@
     margin-left: 1%;
   }
 
-  span.drop-arrow {
-    background: url('../images/arrows-ffffff.png') 10px -100px;
-    display: block;
-    height: 10px;
-    position: absolute;
-    right: 5px;
-    top: 13px;
-    width: 10px;
-  }
-
   .sidebar-left .column,
   .sidebar-left .columns {
     margin-left: 0;
+  }
+
+  .sidebar-left #content-wrapper .columns {
+    float: right;
   }
 
 }
@@ -375,6 +369,10 @@
   .sidebar-left .columns {
     margin-left: 0;
   }
+
+  input[type="submit"] {
+    margin-top: 10px;
+  }
 }
 
 /* #Mobile (Landscape)
@@ -482,13 +480,6 @@
     padding-left: 0;
   }
 
-  #main-menu .nav-toggle {
-    display: block !important;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 40px;
-  }
-
   .field-type-image {
     float: right;
     margin-left: 1%;
@@ -499,10 +490,6 @@
     float: none;
     line-height: 1em;
     margin: 0;
-  }
-
-  nav#main-menu {
-    margin-top: 2px;
   }
 
   .flexslider p {
@@ -614,7 +601,6 @@
   zoom: 1;
 }
 
-/* You can also use a <br class="clear"/>to clear columns */
 .clear {
   clear: both;
   display: block;
@@ -627,152 +613,4 @@
 img.scale-with-grid {
   height: auto;
   max-width: 100%;
-}
-
-/* media query for mobile menu - do not put any other code here */
-@media screen and (max-width:767px) {
-  #main-menu li ul {
-    box-shadow: 0 0 3px #333;
-    display: none;
-    height: auto;
-    margin: 0;
-    min-width: 190px;
-    padding: 0;
-    z-index: 9999;
-  }
-
-  #main-menu li {
-    line-height: 40px;
-    position: relative;
-  }
-
-  #main-menu {
-    background: #444;
-    background: -moz-repeating-linear-gradient(#555, #333 40px);
-    background: -webkit-repeating-linear-gradient(#555, #333 40px);
-    background: -o-repeating-linear-gradient(#555, #333 40px);
-    background: -ms-repeating-linear-gradient(#555, #333 40px);
-    background: repeating-linear-gradient(#555, #333 40px);
-    box-shadow: 0 0 3px #999;
-    min-height: 40px;
-  }
-
-  #main-menu ul {
-    display: none;
-  }
-
-  #main-menu li ul {
-    position: static;
-  }
-
-  #main-menu li ul ul {
-    margin: 0 !important;
-  }
-
-  #main-menu ul,
-  #main-menu li {
-    float: none;
-    max-width: 100%;
-  }
-
-  #main-menu li {
-    float: none;
-    line-height: 40px;
-    margin: 0;
-    padding: 0;
-  }
-
-  #main-menu ul {
-    font-size: 13px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  #main-menu a {
-    background: #444;
-    background: -moz-linear-gradient(#555, #333);
-    background: -webkit-linear-gradient(#555, #333);
-    background: -o-linear-gradient(#555, #333);
-    background: -ms-linear-gradient(#555, #333);
-    background: linear-gradient(#555, #333);
-    color: #f0f0f0;
-    display: block;
-    padding: 0;
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-  }
-
-  #main-menu ul li.leaf,
-  #main-menu ul li.expanded,
-  #main-menu ul li.collapsed {
-    list-style: none;
-  }
-
-  #main-menu li li a {
-    text-align: center;
-  }
-
-  #main-menu li li li a {
-    background: #777;
-    border-top-color: #7f7f7f;
-  }
-
-  #main-menu a:hover {
-    background: #888;
-    background: -moz-linear-gradient(#999, #777);
-    background: -webkit-linear-gradient(#999, #777);
-    background: -o-linear-gradient(#999, #777);
-    background: -ms-linear-gradient(#999, #777);
-    background: linear-gradient(#999, #777);
-  }
-
-  #main-menu li:hover >ul,
-  #main-menu li li:hover >ul,
-  #main-menu li li li:hover >ul {
-    display: none;
-  }
-
-  .drop-down-toggle {
-    display: block;
-  }
-
-  .drop-down-toggle {
-    background: #333;
-    background: -moz-linear-gradient(#333, #444);
-    background: -webkit-linear-gradient(#333, #444);
-    background: -o-linear-gradient(#333, #444);
-    background: -ms-linear-gradient(#333, #444);
-    background: linear-gradient(#333, #444);
-    border: #aaa 3px solid;
-    border-radius: 15px;
-    display: block;
-    height: 20px;
-    position: absolute;
-    right: 16px;
-    top: 7px;
-    width: 20px;
-  }
-
-  .drop-down-arrow {
-    border-left: transparent 5px solid;
-    border-top: 5px solid #aaa;
-    display: block;
-    height: 0;
-    margin: 8px 0 0 5px;
-    width: 0;
-  }
-
-  #main-menu li li .drop-down-toggle {
-    top: 5px;
-  }
-
-  #main-menu .nav-toggle {
-    display: block;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 40px;
-  }
-
 }

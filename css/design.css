@@ -126,7 +126,7 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
 }
 
 .color-palette-green-bamboo a:hover {
-  color: #666;
+  color: #667;
 }
 
 .color-palette-green-bamboo .sidebar .block > h2,
@@ -177,7 +177,7 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
 
 .color-palette-green-bamboo .comment .submitted a {
   border-bottom: 1px dotted #333;
-  color: #eaeaea;
+  color: #667;
 }
 
 .color-palette-green-bamboo input[type="submit"] {
@@ -205,7 +205,7 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
 }
 
 .color-palette-dark-rust a:hover {
-  color: #666;
+  color: #667;
 }
 
 .color-palette-dark-rust .sidebar .block > h2,
@@ -277,7 +277,7 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
 }
 
 .color-palette-warm-purple a:hover {
-  color: #666;
+  color: #667;
 }
 
 .color-palette-warm-purple .sidebar .block > h2,
@@ -426,6 +426,8 @@ body.bg-abstract5 {
 }
 
 body.bg-dark-linen #colophon {
+  /* for IE 9 */
+  background: #b8b8b8;
   /* ie10 consumer preview */
   background-image: -ms-linear-gradient(bottom, #cfcfcf 0%, #9c9c9c 100%);
   /* mozilla firefox */

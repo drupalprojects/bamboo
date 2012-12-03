@@ -10,36 +10,42 @@
     attach:function (context, settings) {
 // End drupal calls.
 
-// Mobile toggle menu.
-  $('.nav-toggle').click(function () {
-    $('#main-menu div ul:first-child').slideToggle(250);
-      return false;
-  });
-  if (($(window).width() > 767) || ($(document).width() > 767)) {
-    $('#main-menu li').mouseenter(function () {
-      $(this).children('ul').css('display', 'none').stop(true, true).slideToggle(250).css('display', 'block')
-        .children('ul').css('display', 'none');
-    });
-    $('#main-menu li').mouseleave(function () {
-      $(this).children('ul').stop(true, true).fadeOut(250).css('display', 'block');
-    })
-  }
-  else {
-    $('#main-menu li').each(function () {
-      if ($(this).children('ul').length) {
-        $(this).append('<span class="drop-down-toggle"><span class="drop-down-arrow"></span></span>');
-      }
-    });
-    $('.drop-down-toggle').click(function () {
-      $(this).parent().children('ul').slideToggle(250);
-    });
-  }
+      $('html').addClass('js');
+
+      // Mobile menu.
+      // http://webdesignerwall.com/demo/mobile-nav/
+      // http://www.learningjquery.com/2008/10/1-way-
+      // to-avoid-the-flash-of-unstyled-content
+      // Add a menu depth for better theming.
+      // Lets not render the menu until it's fully ready.
+      // It's hidden with CSS initally
+
+     $(document).ready(function() {
+     $('#main-menu ul').each(function() {
+        var depth = $(this).parents('ul').length;
+        $(this).addClass('ul-depth-' + depth);
+     });
+      });
+
+      // add mobile nav wrapper.
+      $('#main-menu ul.menu.ul-depth-0').wrap('<div id="nav-wrap"></div>');
+
+      /* Prepend menu icon. */
+      $('#nav-wrap').prepend('<div id="menu-icon">Menu</div>');
+
+      /* toggle nav */
+      $("#menu-icon").click(function() {
+        $("#main-menu ul.menu.ul-depth-0").toggle();
+        $(this).toggleClass("active");
+      });
+
+      // End mobile menu.
 
 // prepend the post date before the h1.
   $(".date-in-parts")
     .prependTo(".not-front.page-node #post-content");
 
-// global zebra stripes
+// global zebra stripes.
   $(".front article:visible:even").addClass("even");
   $(".front article:visible:odd").addClass("odd");
 
@@ -56,11 +62,18 @@
   });
 
 // Add an "arrow" span to primary menus that are expanded.
-  $('#main-menu ul li').each(function() {
-    if ($(this).hasClass('expanded')) {
-      $(this).closest('li').append("<span class='drop-arrow'></span>").html();
-      }
+  $('#main-menu ul li.expanded').each(function() {
+    //if ($(this).hasClass('expanded')) {
+      $(this).append("<span class='drop-arrow'></span>").html();
+    //  }
   });
+
+      // Fade dropdown submenus.
+/*      $("#main-menu ul.menu.ul-depth-0 li a").hover(function() {
+      $("#main-menu ul.menu.ul-depth-0 li li a").fadeIn(800);
+      });*/
+
+
 
   }
 }

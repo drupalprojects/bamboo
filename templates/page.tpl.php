@@ -92,21 +92,19 @@
     <?php print render($page['top_links']); ?>
   <?php endif; ?>
 </div>
+</header>
 
-  <div class="clear"></div>
-  <nav id="main-menu" role="navigation">
-    <a class="nav-toggle" href="#">Navigation</a>
-
+<div id="menu-wrapper" class="container">
+  <nav id="main-menu" role="navigation" class="sixteen columns alpha omega">
     <div class="menu-navigation-container">
       <?php
       $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
       print drupal_render($main_menu_tree);
       ?>
     </div>
-    <div class="clear"></div>
   </nav>
-  <!-- end main-menu -->
-</header>
+</div>
+<!-- end main-menu -->
 
 <div class="container" id="content-wrapper">
 
@@ -175,7 +173,6 @@
   </div>
   <?php endif; ?>
   </div>
-    <div class="clear"></div>
   <?php endif; ?>
 
   <?php if ($page['sidebar_first']): ?>
@@ -212,8 +209,6 @@
     <?php print render($page['sidebar_first']); ?>
     </aside><!-- /#sidebar-first -->
 <?php endif; ?>
-
-  <div class="clear"></div>
 
 </div>
 

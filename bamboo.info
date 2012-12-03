@@ -6,7 +6,8 @@ engine = phptemplate
 ; CSS --------------------
 
 ; --- Note, 'responsive.css' must come last!
-stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/menu.css
+stylesheets[all][] = css/normalize.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/design.css
 stylesheets[all][] = css/responsive.css
@@ -46,4 +47,5 @@ settings[theme_sidebar_location]  = sidebar_right
 settings[header_font_style]  = sans_serif
 settings[body_font_style]  = sans_serif
 settings[theme_color_palette]  = green_bamboo
-settings[theme_bg]  = light_fabric
+settings[theme_bg]  = dark_linen
+settings[bamboo_slideshowcss]  = 0
