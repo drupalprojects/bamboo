@@ -40,7 +40,6 @@
 }
 
 .bamboo-slideshow .views-field.views-field-field-slide-text {
-  background: #b74819;
   border-top: 2px dotted #fff;
   color: #fff;
 }
@@ -57,7 +56,6 @@
 .bamboo-slideshow .views-field.read-more a {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
-  background: #b74819;
   border-radius: 8px;
   bottom: 80px;
   color: #fff;
@@ -68,4 +66,19 @@
   padding: 7px;
   position: absolute;
   right: 10px;
+}
+
+.color-palette-green-bamboo .bamboo-slideshow .views-field.views-field-field-slide-text,
+.color-palette-green-bamboo .bamboo-slideshow .views-field.read-more a {
+  background: #8ea61f;
+}
+
+.color-palette-dark-rust .bamboo-slideshow .views-field.views-field-field-slide-text,
+.color-palette-dark-rust .bamboo-slideshow .views-field.read-more a {
+  background: #b74819;
+}
+
+.color-palette-warm-purple .bamboo-slideshow .views-field.views-field-field-slide-text,
+.color-palette-warm-purple .bamboo-slideshow .views-field.read-more a {
+  background: #4d5067;
 }
