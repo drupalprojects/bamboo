@@ -20,8 +20,8 @@
   background: -o-repeating-linear-gradient(#555, #333 40px);
   background: -ms-repeating-linear-gradient(#555, #333 40px);
   background: repeating-linear-gradient(#555, #333 40px);
-  padding: .01em 0;
   border-bottom: 2px dotted #fff;
+  padding: .01em 0;
 }
 
 .bamboo-slideshow .views-field.views-field-title h2 {
@@ -30,9 +30,9 @@
 }
 
 .bamboo-slideshow .views-field.views-field-title h2 a {
+  color: #eaeaea;
   font-size: 1.3em;
   font-weight: bold;
-  color: #eaeaea;
 }
 
 .bamboo-slideshow .views-field.views-field-title h2 a:hover {

@@ -68,13 +68,6 @@
     //  }
   });
 
-      // Fade dropdown submenus.
-/*      $("#main-menu ul.menu.ul-depth-0 li a").hover(function() {
-      $("#main-menu ul.menu.ul-depth-0 li li a").fadeIn(800);
-      });*/
-
-
-
   }
 }
 })
