@@ -82,3 +82,50 @@
 .color-palette-warm-purple .bamboo-slideshow .views-field.read-more a {
   background: #4d5067;
 }
+
+@media only screen and (min-width:690px) and (max-width:767px) {
+  .bamboo-slideshow .views-field.read-more a {
+    top: 250px;
+    bottom: inherit;
+  }
+}
+
+@media only screen and (min-width:300px) and (max-width:689px) {
+
+  .bamboo-slideshow .views-field.views-field-title h2 a {
+    background: -moz-repeating-linear-gradient(#555, #333 75px);
+    background: -webkit-repeating-linear-gradient(#555, #333 75px);
+    background: -o-repeating-linear-gradient(#555, #333 75px);
+    background: -ms-repeating-linear-gradient(#555, #333 75px);
+    background: repeating-linear-gradient(#555, #333 75px);
+    font-size: .9em;
+    line-height: 1.1em;
+  }
+
+  .bamboo-slideshow .views-field.views-field-field-slide-text p {
+    font-size: .9em;
+  }
+
+  .bamboo-slideshow .views-field.read-more a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    background: #ccc;
+    border: none;
+    border-radius: 0;
+    bottom: 0;
+    display: block;
+    font-size: .9em;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 4px 0 0 4px;
+    position: relative;
+    right: 0;
+  }
+
+  .color-palette-green-bamboo .bamboo-slideshow .views-field.read-more a,
+  .color-palette-dark-rust .bamboo-slideshow .views-field.read-more a,
+  .color-palette-warm-purple .bamboo-slideshow .views-field.read-more a  {
+    background: #666;
+  }
+
+}
