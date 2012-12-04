@@ -85,8 +85,8 @@
 
 @media only screen and (min-width:690px) and (max-width:767px) {
   .bamboo-slideshow .views-field.read-more a {
-    top: 250px;
     bottom: inherit;
+    top: 250px;
   }
 }
 
@@ -124,7 +124,7 @@
 
   .color-palette-green-bamboo .bamboo-slideshow .views-field.read-more a,
   .color-palette-dark-rust .bamboo-slideshow .views-field.read-more a,
-  .color-palette-warm-purple .bamboo-slideshow .views-field.read-more a  {
+  .color-palette-warm-purple .bamboo-slideshow .views-field.read-more a {
     background: #666;
   }
 
