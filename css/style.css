@@ -333,6 +333,7 @@ aside.sidebar .block-content ul li,
   -webkit-border-bottom-left-radius: 24px;
   border-radius: 24px 0 0 24px;
   margin-right: -10px;
+  padding: 2px 0 2px 10px;
 }
 
 .sidebar-left aside h2 {
@@ -341,7 +342,8 @@ aside.sidebar .block-content ul li,
   -moz-border-radius-bottomright: 24px;
   -webkit-border-bottom-right-radius: 24px;
   border-radius: 0 24px 24px 0;
-  margin-left: -10px;
+  margin-left: -20px;
+  padding: 2px 0 2px 10px;
 }
 
 footer#colophon h2 {

@@ -70,6 +70,10 @@
   z-index: 300;
 }
 
+.body-font-sans-serif #main-menu ul.menu.ul-depth-0 ul {
+  top: 39px;
+}
+
 #main-menu ul.menu.ul-depth-0 ul li a {
   font-size: .8em;
   padding: 6px 9px;

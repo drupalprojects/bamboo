@@ -424,6 +424,20 @@
     margin: 0;
   }
 
+  .sidebar-right aside h2 {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin-right: -10px;
+  }
+
+  .sidebar-left aside h2 {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+
 }
 
 /*#Mobile (Portrait)
@@ -561,6 +575,20 @@
     float: none;
     margin: 0 10px;
     width: 94%;
+  }
+
+  .sidebar-right aside h2 {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin-right: -10px;
+  }
+
+  .sidebar-left aside h2 {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
   }
 
 
