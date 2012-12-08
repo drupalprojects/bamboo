@@ -373,6 +373,12 @@
   input[type="submit"] {
     margin-top: 10px;
   }
+
+  .form-text, textarea, input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 80%;
+  }
 }
 
 /* #Mobile (Landscape)
@@ -436,6 +442,13 @@
     -moz-border-radius: 20px;
     border-radius: 20px;
     margin-left: 10px;
+  }
+
+  .form-text, textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 80%;
   }
 
 }
@@ -589,6 +602,12 @@
     -moz-border-radius: 20px;
     border-radius: 20px;
     margin-left: 10px;
+  }
+
+  .form-text, textarea, input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 80%;
   }
 
 
