@@ -125,11 +125,13 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
   color: #667;
 }
 
+.color-palette-green-bamboo #preface-wrapper .block h2,
 .color-palette-green-bamboo .sidebar .block h2,
 .color-palette-green-bamboo .date-in-parts,
 .color-palette-green-bamboo input[type="submit"],
 .color-palette-green-bamboo input[type="reset"],
 .color-palette-green-bamboo button {
+  background: #7e8e34;
   /* ie10 consumer preview */
   background-image: -ms-linear-gradient(bottom, #a6bb47 0%, #7e8e34 100%);
   /* mozilla firefox */
@@ -142,7 +144,7 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
   background-image: -webkit-linear-gradient(bottom, #a6bb47 0%, #7e8e34 100%);
   /* w3c markup, ie10 release preview */
   background-image: linear-gradient(to top, #a6bb47 0%, #7e8e34 100%);
-  color: #fff;
+  color: #eaeaea;
 }
 
 .color-palette-green-bamboo h1,
@@ -204,12 +206,14 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
   color: #667;
 }
 
+.color-palette-dark-rust #preface-wrapper .block h2,
 .color-palette-dark-rust .sidebar .block h2,
 .color-palette-dark-rust .date-in-parts,
 .color-palette-dark-rust nav#main-menu ul li li a,
 .color-palette-dark-rust input[type="submit"],
 .color-palette-dark-rust input[type="reset"],
 .color-palette-dark-rust button {
+  background: #a7461c;
   /* ie10 consumer preview */
   background-image: -ms-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
   /* mozilla firefox */
@@ -222,7 +226,7 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
   background-image: -webkit-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
   /* w3c markup, ie10 release preview */
   background-image: linear-gradient(to top, #ce4c14 0%, #a7461c 100%);
-  color: #fff;
+  color: #eaeaea;
 }
 
 .color-palette-dark-rust h1,
@@ -277,12 +281,14 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
   color: #667;
 }
 
+.color-palette-warm-purple #preface-wrapper .block h2,
 .color-palette-warm-purple .sidebar .block h2,
 .color-palette-warm-purple .date-in-parts,
 .color-palette-warm-purple nav#main-menu ul li li a,
 .color-palette-warm-purple input[type="submit"],
 input[type="reset"],
 button {
+  background: #494c62;
   /* ie10 consumer preview */
   background-image: -ms-linear-gradient(top, #626584 0%, #494c62 100%);
   /* mozilla firefox */
@@ -295,7 +301,7 @@ button {
   background-image: -webkit-linear-gradient(top, #626584 0%, #494c62 100%);
   /* w3c markup, ie10 release preview */
   background-image: linear-gradient(to bottom, #626584 0%, #494c62 100%);
-  color: #fff;
+  color: #eaeaea;
 }
 
 .color-palette-warm-purple h1,

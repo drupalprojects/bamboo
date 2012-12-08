@@ -333,7 +333,7 @@ aside.sidebar .block-content ul li,
   -webkit-border-bottom-left-radius: 24px;
   border-radius: 24px 0 0 24px;
   margin-right: -10px;
-  padding: 2px 0 2px 10px;
+  padding: 1px 0 3px 14px;
 }
 
 .sidebar-left aside h2 {
@@ -346,12 +346,30 @@ aside.sidebar .block-content ul li,
   padding: 2px 0 2px 10px;
 }
 
-footer#colophon h2 {
+#preface-wrapper .block h2 {
+  -moz-border-radius-topright: 24px;
+  -webkit-border-top-right-radius: 24px;
+  -moz-border-radius-bottomright: 24px;
+  -webkit-border-bottom-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-top-right-radius: 24px;
+  margin-right: 0;
+  padding: 2px 0 3px 10px;
+}
+
+footer#colophon h2,
+footer#colophon {
   color: #eaeaea;
 }
 
-footer#colophon {
-  color: #eaeaea;
+footer#colophon .block-inner:first-child,
+#preface-wrapper .block-inner:first-child {
+  padding-left: 14px;
+}
+
+footer#colophon .block-inner:last-child,
+#preface-wrapper .block-inner:last-child {
+  padding-right: 14px;
 }
 
 header.container {
@@ -575,9 +593,7 @@ legend {
   font-weight: bold;
 }
 
-/*-------------------------------------------*
-/* Menus and lists
-/*-------------------------------------------*/
+/* Menus and lists */
 .item-list ul {
   margin: 0;
   padding: 0 0 0 1.5385em;
@@ -589,7 +605,6 @@ legend {
 }
 
 .links.node-links ul li:before {
-/*  content: "\00bb";*/
   padding-right: 8px;
 }
 
@@ -611,9 +626,8 @@ ul.inline li {
   padding: 0;
 }
 
-/*-------------------------------------------*
-/* Admin Tabs
-/*-------------------------------------------*/
+/* Admin Tabs */
+
 .tabs-wrapper {
   border-bottom: 1px solid #b7b7b7;
   margin: 0 0 5px 0;
@@ -682,9 +696,8 @@ ul.secondary a.active {
   border-bottom: none;
 }
 
-/*-------------------------------------------*
-/* Tabs and Tags
-/*-------------------------------------------*/
+/* Tabs and Tags */
+
 .field-name-field-tags {
   margin: 0 0 10px 0;
 }
@@ -707,9 +720,8 @@ ul.secondary a.active {
   display: inline;
 }
 
-/*-------------------------------------------*
-/* Profile
-/*-------------------------------------------*/
+/* Profile */
+
 .profile {
   margin: 1.5385em 0;
 }
@@ -730,9 +742,7 @@ ul.secondary a.active {
   width: 36em;
 }
 
-/*-------------------------------------------*
-/* Comments
-/*-------------------------------------------*/
+/* Comments */
 
 #comments {
   border: 2px solid #cecece;
