@@ -409,6 +409,10 @@ body.bg-retro4 {
   background: url("../images/bg-retro4.png") repeat fixed;
 }
 
+body.bg-retro5 {
+  background: url("../images/bg-retro5.png") repeat fixed;
+}
+
 body.bg-abstract1 {
   background: url("../images/bg-abstract1.png") repeat fixed;
 }

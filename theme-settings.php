@@ -49,6 +49,7 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
       'retro2' => t('Retro 2'),
       'retro3' => t('Retro 3'),
       'retro4' => t('Retro 4'),
+      'retro5' => t('Retro 5'),
       'abstract1' => t('Abstract pattern 1'),
       'abstract2' => t('Abstract pattern 2'),
       'abstract3' => t('Abstract pattern 3'),
