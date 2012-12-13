@@ -54,6 +54,11 @@ function bamboo_preprocess_html(&$vars) {
     drupal_add_css(drupal_get_path('theme', 'bamboo') . '/css/bamboo-slideshow.css', 'file');
   }
 
+  // Use local.css if true.
+  if (theme_get_setting('bamboo_localcss') == TRUE) {
+    drupal_add_css(drupal_get_path('theme', 'bamboo') . '/css/local.css', 'file');
+  }
+
   if (!$vars['is_front']) {
     // Add unique class for each page.
     $path = drupal_get_path_alias($_GET['q']);
@@ -206,6 +211,11 @@ function bamboo_preprocess_node(&$vars) {
   // Show only the username in submitted, the date is handled by node.tpl.php.
   $vars['submitted'] = t('Submitted by !username',
     array('!username' => $vars['name']));
+
+  if ($blocks  = block_get_blocks_by_region('node_block')) {
+    $vars['node_block'] = $blocks;
+  }
+
 }
 
 /**

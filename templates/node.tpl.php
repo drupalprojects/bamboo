@@ -114,6 +114,13 @@
         hide($content['links']);
         print render($content);
         ?>
+
+      <?php if ($node_block): ?>
+        <div id="node-block">
+          <?php print render($node_block); ?>
+        </div>
+      <?php endif; ?>
+
     </div>
 
     <div class="clearfix">

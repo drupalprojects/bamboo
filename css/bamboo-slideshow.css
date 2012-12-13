@@ -1,7 +1,12 @@
-/* Slideshow theming for downloadable feature */
+/* Slideshow theming for downloadable feature. */
 
 .bamboo-slideshow .flex-nav-container {
   margin-bottom: 0;
+}
+
+.bamboo-slideshow ul li,
+#content article .bamboo-slideshow ul li {
+  list-style-image: none;
 }
 
 .bamboo-slideshow .flexslider {

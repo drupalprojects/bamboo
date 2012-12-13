@@ -101,6 +101,9 @@
       $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
       print drupal_render($main_menu_tree);
       ?>
+      <?php if ($page['main_menu']): ?>
+        <?php print render($page['main_menu']); ?>
+      <?php endif; ?>
     </div>
   </nav>
 </div>
@@ -108,10 +111,11 @@
 
 <div class="container" id="content-wrapper">
 
-  <?php if ($is_front): ?>
-      <?php if ($page['front_welcome']): ?>
-        <div id="front-welcome"> <?php print render($page['front_welcome']); ?></div>
-      <?php endif; ?>
+  <?php if ($page['hero_first']): ?>
+    <!--above breadcrumbs-->
+    <div id="hero-first" class="sixteen columns">
+      <?php print render($page['hero_first']); ?>
+    </div>
   <?php endif; ?>
 
   <?php if ($breadcrumb): ?>
@@ -120,9 +124,10 @@
     </div>
   <?php endif; ?>
 
-    <?php if ($page['hero']): ?>
-    <div id="hero" class="sixteen columns">
-      <?php print render($page['hero']); ?>
+    <?php if ($page['hero_second']): ?>
+    <!--below breadcrumbs-->
+    <div id="hero-second" class="sixteen columns">
+      <?php print render($page['hero_second']); ?>
     </div>
     <?php endif; ?>
 

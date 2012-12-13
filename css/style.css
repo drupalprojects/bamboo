@@ -883,3 +883,11 @@ summary {
   margin-top: 11px;
   text-align: right;
 }
+
+#content article ul.contextual-links li {
+  list-style-image: none;
+}
+
+#hero-first {
+  margin-top: 10px;
+}
