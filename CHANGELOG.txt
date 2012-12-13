@@ -1,0 +1,16 @@
+bamboo 7.x-1.x-dev | December 13, 2012
+- Added local.sample.css, node block region,
+main menu region for third party menus,
+Hero1 and Hero2 regions, more slideshow
+theme tweaking, updated docu.
+
+bamboo 7.x-1.x-dev | December 11, 2012
+- Adding a new background.
+
+bamboo 7.x-1.x-dev | December 8, 2012
+- Fixing some issues with IE9 not rendering gradients.
+- fixing some form element issues
+#1860768 by highrockmedia: Mobile menu on iPad is finicky
+
+bamboo 7.x-1.x-dev | December 6, 2012
+#1860268  by highrockmedia: html_attributes variable problem
