@@ -215,6 +215,15 @@ function bamboo_preprocess_node(&$vars) {
   if ($blocks  = block_get_blocks_by_region('node_block')) {
     $vars['node_block'] = $blocks;
   }
+  
+  if ($blocks_node_block = block_get_blocks_by_region('node_block')) {
+        $vars['node_block'] = $blocks_node_block;
+        $vars['node_block']['#theme_wrappers'] = array('region');
+        $vars['node_block']['#region'] = 'node_block';
+    }
+    else {
+      $vars['node_block'] = '';
+    }
 
 }
 

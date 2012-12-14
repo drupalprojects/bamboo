@@ -282,27 +282,6 @@ h6 {
   margin: 0px auto;
 }
 
-#front-welcome {
-  font-weight: 400;
-  padding: 15px 5% 0;
-  text-align: center;
-  width: 90%;
-}
-
-#front-welcome .block > h2 {
-  color: #282c2f;
-  font-size: 24px;
-  margin: 0px auto;
-  text-transform: none;
-}
-
-#front-welcome p {
-  color: #282c2f;
-  font-size: 18px;
-  line-height: 22px;
-  padding: 10px 0px;
-}
-
 .width-33 {
   float: left;
   margin: 0 10px;
