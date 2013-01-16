@@ -20,12 +20,10 @@
       // Lets not render the menu until it's fully ready.
       // It's hidden with CSS initally
 
-     $(document).ready(function() {
      $('#main-menu ul').each(function() {
         var depth = $(this).parents('ul').length;
         $(this).addClass('ul-depth-' + depth);
      });
-      });
 
       // add mobile nav wrapper.
       $('#main-menu ul.menu.ul-depth-0').wrap('<div id="nav-wrap"></div>');
