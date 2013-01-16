@@ -1,3 +1,10 @@
+bamboo 7.x-1.x-dev | January 16, 2013
+- Fixing #1862200: [Feature request] theme sub-sub or 'tertiary' menus
+- New theme setting for tertiary menus (yes / no option)
+
+bamboo 7.x-1.x-dev | December 14, 2012
+- Fixing #1866334: Undefined variable: node_block
+
 bamboo 7.x-1.x-dev | December 13, 2012
 - Added local.sample.css, node block region,
 main menu region for third party menus,

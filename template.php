@@ -59,6 +59,11 @@ function bamboo_preprocess_html(&$vars) {
     drupal_add_css(drupal_get_path('theme', 'bamboo') . '/css/local.css', 'file');
   }
 
+  // Use tertiary menus = true.
+  if (theme_get_setting('bamboo_tertiarymenu') == TRUE) {
+    $vars['classes_array'][] = drupal_html_class('tertiarymenu');
+  }
+
   if (!$vars['is_front']) {
     // Add unique class for each page.
     $path = drupal_get_path_alias($_GET['q']);

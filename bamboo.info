@@ -41,7 +41,7 @@ features[] = comment_user_picture
 features[] = favicon
 features[] = main_menu
 
-; Deafult settings --------------
+; Bamboo default settings --------------
 
 settings[bamboo_themelogo]  = 1
 settings[breadcrumbs]  = 1
@@ -51,3 +51,4 @@ settings[body_font_style]  = sans_serif
 settings[theme_color_palette]  = green_bamboo
 settings[theme_bg]  = dark_linen
 settings[bamboo_slideshowcss]  = 0
+settings[bamboo_tertiarymenu]  = 0

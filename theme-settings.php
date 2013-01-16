@@ -108,18 +108,25 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     '#collapsed' => FALSE,
   );
 
-  $form['additional_settings']['other_settings']['bamboo_slideshowcss'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Using bamboo slideshow feature?'),
-    '#default_value' => theme_get_setting('bamboo_slideshowcss', 'bamboo'),
-    '#description' => t("Only check this box if you have downloaded and activated the slideshow feature."),
-  );
-
   $form['additional_settings']['other_settings']['bamboo_localcss'] = array(
     '#type' => 'checkbox',
     '#title' => t('Use local.css?'),
     '#default_value' => theme_get_setting('bamboo_localcss', 'bamboo'),
     '#description' => t("Only check this box if you have renamed local.sample.css to local.css."),
+  );
+
+  $form['additional_settings']['other_settings']['bamboo_tertiarymenu'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Use tertiary drop down menus?'),
+    '#default_value' => theme_get_setting('bamboo_tertiarymenu', 'bamboo'),
+    '#description' => t("Check this box if you are going to have tertiary (third level drop down menus)"),
+  );
+
+  $form['additional_settings']['other_settings']['bamboo_slideshowcss'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Using bamboo slideshow feature?'),
+    '#default_value' => theme_get_setting('bamboo_slideshowcss', 'bamboo'),
+    '#description' => t("Only check this box if you have downloaded and activated the slideshow feature."),
   );
 
 }

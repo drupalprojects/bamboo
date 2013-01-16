@@ -55,6 +55,15 @@ Check the box for local.css if you have copied or renamed
 local.sample.css to local.css. This is for your own styling that will
 not be overwritten with upgrades.
 
+- Tertiary Menus
+There is a theme setting checkbox if you will be using tertiary menus.
+Check this box if you have sub-sub or third level drop down
+menus. The setting does not change your menus, it merely styles
+the last secondary level menu to not have rounded corners. This setting
+was added to preseve the original styling of the theme for those who
+are not using tertiary drop down menus. Note that tertiary menus in
+mobile are indented already.
+
 - Main Menu block region
 Use this region if you turn off "Main Menu in the theme settings
 and use your own third party menu system such
@@ -74,6 +83,8 @@ or comments. Useful for ads or otherwise.
 - Mobile friendly menu
 
 - Drop down menus (for desktop)
+
+- Tertiary drop down menu styling
 
 -- REQUIREMENTS --
 
