@@ -1,4 +1,4 @@
-Version 1.7, December 13, 2012
+Version 1.8, January 16, 2013
 
 -- SUMMARY --
 
