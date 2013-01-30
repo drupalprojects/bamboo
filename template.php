@@ -56,7 +56,14 @@ function bamboo_preprocess_html(&$vars) {
 
   // Use local.css if true.
   if (theme_get_setting('bamboo_localcss') == TRUE) {
-    drupal_add_css(drupal_get_path('theme', 'bamboo') . '/css/local.css', 'file');
+     drupal_add_css(path_to_theme() . '/css/local.css',
+      array(
+        'group' => CSS_THEME,
+        'media' => 'screen',
+        'preprocess' => TRUE,
+        'weight' => '9999',
+      )
+    );
   }
 
   // Use tertiary menus = true.
