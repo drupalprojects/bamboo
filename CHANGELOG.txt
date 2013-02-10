@@ -1,3 +1,7 @@
+bamboo 7.x-1.x-dev | February 10, 2013
+[#1913098] by highrockmedia:
+- bug in auto-complete forms
+
 bamboo 7.x-1.x-dev | January 16, 2013
 [#1870828] by highrockmedia:
 - Tentative fix for Mobile menu not working when
