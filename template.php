@@ -49,11 +49,6 @@ function bamboo_preprocess_html(&$vars) {
   $file = theme_get_setting('theme_sidebar_location');
   $vars['classes_array'][] = drupal_html_class($file);
 
-  // Add slideshow CSS if true.
-  if (theme_get_setting('bamboo_slideshowcss') == TRUE) {
-    drupal_add_css(drupal_get_path('theme', 'bamboo') . '/css/bamboo-slideshow.css', 'file');
-  }
-
   // Use local.css if true.
   if (theme_get_setting('bamboo_localcss') == TRUE) {
      drupal_add_css(path_to_theme() . '/css/local.css',

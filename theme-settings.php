@@ -122,11 +122,4 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     '#description' => t("Check this box if you are going to have tertiary (third level drop down menus)"),
   );
 
-  $form['additional_settings']['other_settings']['bamboo_slideshowcss'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Using bamboo slideshow feature?'),
-    '#default_value' => theme_get_setting('bamboo_slideshowcss', 'bamboo'),
-    '#description' => t("Only check this box if you have downloaded and activated the slideshow feature."),
-  );
-
 }
