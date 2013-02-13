@@ -580,6 +580,14 @@ legend {
   font-weight: bold;
 }
 
+.page-node-add .description {
+  background: #f0f8ff url('../images/help.png') no-repeat 8px 8px;
+  border: 0;
+  margin: 10px 10px 0;
+  padding: 5px 0 10px 40px;
+}
+
+
 /* Menus and lists */
 .item-list ul {
   margin: 0;
