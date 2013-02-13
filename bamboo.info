@@ -50,5 +50,4 @@ settings[header_font_style]  = sans_serif
 settings[body_font_style]  = sans_serif
 settings[theme_color_palette]  = green_bamboo
 settings[theme_bg]  = dark_linen
-settings[bamboo_slideshowcss]  = 0
 settings[bamboo_tertiarymenu]  = 0
