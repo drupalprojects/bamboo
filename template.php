@@ -61,6 +61,14 @@ function bamboo_preprocess_html(&$vars) {
     );
   }
 
+  drupal_add_js(path_to_theme() . '/js/scripts.js',
+    array(
+      'group' => JS_THEME,
+      'preprocess' => TRUE,
+      'weight' => '9999',
+    )
+  );
+
   // Use tertiary menus = true.
   if (theme_get_setting('bamboo_tertiarymenu') == TRUE) {
     $vars['classes_array'][] = drupal_html_class('tertiarymenu');

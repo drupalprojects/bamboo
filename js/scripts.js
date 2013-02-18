@@ -26,10 +26,10 @@
      });
 
       // add mobile nav wrapper.
-      $('#main-menu ul.menu.ul-depth-0').wrap('<div id="nav-wrap"></div>');
+    //  $('#main-menu ul.menu.ul-depth-0').wrap('<div id="nav-wrap"></div>');
 
       /* Prepend menu icon. */
-      $('#nav-wrap').prepend('<div id="menu-icon">Menu</div>');
+      //$('#nav-wrap').prepend('<div id="menu-icon">Menu</div>');
 
       /* toggle nav */
       $("#menu-icon").click(function() {
@@ -66,7 +66,5 @@
     //  }
   });
 
-  }
-}
-})
+  }}})
 (jQuery);
