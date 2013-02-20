@@ -25,12 +25,6 @@
         $(this).addClass('ul-depth-' + depth);
      });
 
-      // add mobile nav wrapper.
-    //  $('#main-menu ul.menu.ul-depth-0').wrap('<div id="nav-wrap"></div>');
-
-      /* Prepend menu icon. */
-      //$('#nav-wrap').prepend('<div id="menu-icon">Menu</div>');
-
       /* toggle nav */
       $("#menu-icon").click(function() {
         $("#main-menu ul.menu.ul-depth-0").toggle();
