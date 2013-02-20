@@ -97,16 +97,18 @@
 <div id="menu-wrapper" class="container">
   <nav id="main-menu" role="navigation" class="sixteen columns alpha omega">
     <div class="menu-navigation-container">
-      <?php if ($main_menu): ?>
+      <!-- Theme native drop downs and mobile menu-->
+      <?php if ($primary_nav): ?>
       <div id="nav-wrap">
         <div id="menu-icon">Menu</div>
-      <?php
-      $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
-      print drupal_render($main_menu_tree);
-      ?>
-        <?php endif; ?>
+        <?php print render($primary_nav); ?>
       </div>
+      <?php endif; ?>
 
+      <!-- for third party menu system modules like superfish-->
+      <?php if ($page['main_menu']): ?>
+        <?php print render($page['main_menu']); ?>
+      <?php endif; ?>
     </div>
   </nav>
 </div>

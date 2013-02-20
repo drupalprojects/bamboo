@@ -12,26 +12,22 @@ stylesheets[all][] = css/style.css
 stylesheets[all][] = css/design.css
 stylesheets[all][] = css/responsive.css
 
-; Scripts --------------------
-;scripts[] = js/scripts.js
-
 ; Regions --------------------
-regions[sidebar_first]  = Sidebar first
+regions[top_links]       = Top Links
+regions[main_menu]  = Main menu (3rd party menu systems)
 regions[hero_first]      = Hero first
 regions[hero_second]  = Hero second
-regions[top_links]       = Top Links
-regions[header]          = Header
-regions[content]         = Content
-regions[content_top]    = Content top
 regions[preface_first]  = Preface first
 regions[preface_second] = Preface second
 regions[preface_third]  = Preface third
+regions[content_top]    = Content top
 regions[help]           = Help
+regions[sidebar_first]  = Sidebar first
+regions[content]         = Content
+regions[node_block]  = Node Block (block in a node)
 regions[footer_first]   = Footer first
 regions[footer_second]  = Footer second
 regions[footer_third]   = Footer third
-regions[node_block]  = Node Block (block in a node)
-regions[main_menu]  = Main menu (use for 3rd party menu systems)
 
 ; Features --------------------
 features[] = logo

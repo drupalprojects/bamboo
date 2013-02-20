@@ -9,6 +9,9 @@
  * Implements hook_preprocess_html().
  */
 function bamboo_preprocess_html(&$vars) {
+  drupal_add_css('//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700',array('type' => 'external'));
+  drupal_add_css('//fonts.googleapis.com/css?family=Rosarivo:400,400italic&subset=latin,latin-ext',array('type' => 'external'));
+
   // Add a body class is the site name is hidden.
   if (theme_get_setting('toggle_name') == FALSE) {
     $vars['classes_array'][] = 'site-name-hidden';
@@ -158,21 +161,17 @@ function bamboo_breadcrumb($vars) {
  * Override or insert variables into the page template.
  */
 function bamboo_preprocess_page(&$vars) {
-  if (isset($vars['main_menu'])) {
-    $vars['main_menu'] = theme('links__system_main_menu', array(
-      'links' => $vars['main_menu'],
-      'attributes' => array(
-        'class' => array('links', 'main-menu', 'clearfix'),
-      ),
-      'heading' => array(
-        'text' => t('Main menu'),
-        'level' => 'h2',
-        'class' => array('element-invisible'),
-      ),
-          ));
+  // Set variable for theme native main menu with sub links.
+  if (!empty($vars['main_menu'])) {
+  // Get the entire main menu tree.
+  $main_menu_tree = menu_tree_all_data('main-menu');
+  // Add the rendered output to the $primary_nav variable.
+  $vars['primary_nav'] = menu_tree_output($main_menu_tree);
   }
+
   else {
-    $vars['main_menu'] = FALSE;
+    // Don't show the menu if unchecked in the theme settings.
+    $vars['primary_nav'] = FALSE;
   }
 
   // If the default logo is used, then determine which color and set the path.
