@@ -52,8 +52,7 @@ queue for things like this.
 
 - local.css
 Check the box for local.css if you have copied or renamed
-local.sample.css to local.css. This is for your own styling that will
-not be overwritten with upgrades.
+local.sample.css to local.css.
 
 - Tertiary Menus
 There is a theme setting checkbox if you will be using tertiary menus.
@@ -102,8 +101,17 @@ with Bamboo.
 
 - drupal.org theme guide is here : http://drupal.org/documentation/theme
 
-- it is recommended to create a sub-theme of your own to put all your overrides
-in: "Creating a sub-theme" - http://drupal.org/node/225125
+- Upgrading
+Nothing too tricky here other than if you have a local.css file as
+per the documentation. When upgrading, you must preserve local.css
+somewhere, otherwise it could get overwritten with the upgrade.
+After you upgrade, you can then drop local.css back in to the theme.
+Of course if you have modified other files, they will all get overwritten.
+In many cases, a subtheme is probably recommended then as
+opposed to using local.css. You can create a sub-theme of your
+own to put all your overrides in: "Creating a sub-theme"
+- http://drupal.org/node/225125 A future version of this
+theme may allow for a custom path for local.css to avoid upgrade snags.
 
 -- NOTES --
 
