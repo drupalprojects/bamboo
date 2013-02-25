@@ -27,6 +27,11 @@ video {
   max-width: 100%;
 }
 
+/* fix for OpenLayers - see: http://drupal.org/node/1925230*/
+img.olTileImage {
+  max-width: none;
+}
+
 nav ul {
   list-style: none;
 }

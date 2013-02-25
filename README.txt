@@ -101,7 +101,7 @@ with Bamboo.
 
 - drupal.org theme guide is here : http://drupal.org/documentation/theme
 
-- Upgrading
+-- UPGRADING --
 Nothing too tricky here other than if you have a local.css file as
 per the documentation. When upgrading, you must preserve local.css
 somewhere, otherwise it could get overwritten with the upgrade.
