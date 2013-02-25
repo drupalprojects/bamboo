@@ -21,6 +21,7 @@ section {
   display: block;
 }
 
+/* Enable responsive images and video */
 img,
 video {
   height: auto;
