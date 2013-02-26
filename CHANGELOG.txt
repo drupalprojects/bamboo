@@ -1,3 +1,9 @@
+-- Change Log --
+
+bamboo 7.x-1.x-dev | February 26, 2013
+[#1925230]  by highrockmedia:
+- Openlayers maps breaks with img set to max-width: 100%;
+
 bamboo 7.x-1.x-dev | February 20, 2013
 [#1921294]  by highrockmedia:
 - Google Fonts cause unsecure warnings when using SSL
