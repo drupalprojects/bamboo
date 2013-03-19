@@ -395,11 +395,6 @@ footer {
   margin-top: 4px;
 }
 
-.node {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-
 .node h2.title {
   color: #4d4d4d;
   font-size: 20px;
@@ -512,6 +507,11 @@ ul.pager li:hover {
 }
 ul.pager li a:hover {
   color: #fff;
+}
+
+ul.pager {
+  position: relative;
+  top: 24px;
 }
 
 /* form elements */

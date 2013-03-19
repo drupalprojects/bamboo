@@ -282,17 +282,11 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
 input[type="reset"],
 button {
   background: #494c62;
-  /* ie10 consumer preview */
   background-image: -ms-linear-gradient(top, #626584 0%, #494c62 100%);
-  /* mozilla firefox */
   background-image: -moz-linear-gradient(top, #626584 0%, #494c62 100%);
-  /* opera */
   background-image: -o-linear-gradient(top, #626584 0%, #494c62 100%);
-  /* webkit (safari/chrome 10) */
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #626584), color-stop(1, #494c62));
-  /* webkit (chrome 11+) */
   background-image: -webkit-linear-gradient(top, #626584 0%, #494c62 100%);
-  /* w3c markup, ie10 release preview */
   background-image: linear-gradient(to bottom, #626584 0%, #494c62 100%);
   color: #eaeaea;
 }
@@ -345,33 +339,33 @@ body.bg-dark-linen {
 }
 
 body.bg-gray-gradient {
-  /* ie10 consumer preview */
+  background: url("../images/blank-bg.gif") repeat fixed;
   background-image: -ms-linear-gradient(bottom, #e8e8e8 0%, #bababa 100%);
-  /* mozilla firefox */
   background-image: -moz-linear-gradient(bottom, #e8e8e8 0%, #bababa 100%);
-  /* opera */
   background-image: -o-linear-gradient(bottom, #e8e8e8 0%, #bababa 100%);
-  /* webkit (safari/chrome 10) */
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e8e8e8), color-stop(1, #bababa));
-  /* webkit (chrome 11+) */
   background-image: -webkit-linear-gradient(bottom, #e8e8e8 0%, #bababa 100%);
-  /* w3c markup, ie10 release preview */
   background-image: linear-gradient(to top, #e8e8e8 0%, #bababa 100%);
 }
 
 body.bg-green-gradient {
-  /* ie10 consumer preview */
+  background: url("../images/blank-bg.gif") repeat fixed;
   background-image: -ms-linear-gradient(top, #afbb7a 0%, #dbe9b6 100%);
-  /* mozilla firefox */
   background-image: -moz-linear-gradient(top, #afbb7a 0%, #dbe9b6 100%);
-  /* opera */
   background-image: -o-linear-gradient(top, #afbb7a 0%, #dbe9b6 100%);
-  /* webkit (safari/chrome 10) */
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #afbb7a), color-stop(1, #dbe9b6));
-  /* webkit (chrome 11+) */
   background-image: -webkit-linear-gradient(top, #afbb7a 0%, #dbe9b6 100%);
-  /* w3c markup, ie10 release preview */
   background-image: linear-gradient(to bottom, #afbb7a 0%, #dbe9b6 100%);
+}
+
+body.bg-purple-gradient {
+  background: url("../images/blank-bg.gif") repeat fixed;
+  background-image: -ms-linear-gradient(top, #626584 0%, #494c62 100%);
+  background-image: -moz-linear-gradient(top, #626584 0%, #494c62 100%);
+  background-image: -o-linear-gradient(top, #626584 0%, #494c62 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #626584), color-stop(1, #494c62));
+  background-image: -webkit-linear-gradient(top, #626584 0%, #494c62 100%);
+  background-image: linear-gradient(to bottom, #626584 0%, #494c62 100%);
 }
 
 body.bg-light-fabric {
