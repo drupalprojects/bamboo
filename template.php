@@ -9,12 +9,6 @@
  * Implements hook_preprocess_html().
  */
 function bamboo_preprocess_html(&$vars) {
-
-  // Demo stuff
-  drupal_add_library('system', 'jquery.cookie');
-  drupal_add_js(drupal_get_path('theme', 'bamboo') . '/demo/demo.js', 'file');
-  drupal_add_css(drupal_get_path('theme', 'bamboo') . '/demo/demo.css', 'file');
-
   drupal_add_css('//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700',array('type' => 'external'));
   drupal_add_css('//fonts.googleapis.com/css?family=Rosarivo:400,400italic&subset=latin,latin-ext',array('type' => 'external'));
 
