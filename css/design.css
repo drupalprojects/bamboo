@@ -368,6 +368,16 @@ body.bg-purple-gradient {
   background-image: linear-gradient(to bottom, #626584 0%, #494c62 100%);
 }
 
+body.bg-rust-gradient {
+  background: url("../images/blank-bg.gif") repeat fixed;
+  background-image: -ms-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
+  background-image: -moz-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
+  background-image: -o-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ce4c14), color-stop(1, #a7461c));
+  background-image: -webkit-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
+  background-image: linear-gradient(to top, #ce4c14 0%, #a7461c 100%);
+}
+
 body.bg-light-fabric {
   background: url("../images/bg-fabric.png") repeat fixed;
 }

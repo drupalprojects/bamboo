@@ -15,3 +15,7 @@ body.bg-purple-gradient {
 body.bg-gray-gradient {
   background: #e8e8e8 url("../images/bg-gray-grad.jpg") repeat-x fixed !important;
 }
+
+body.bg-rust-gradient {
+  background: #ce4c14 url("../images/bg-rust-grad.jpg") repeat-x fixed !important;
+}

@@ -891,3 +891,7 @@ summary {
 #hero-first {
   margin-top: 10px;
 }
+
+#main-menu ul {
+  display:none;
+}
