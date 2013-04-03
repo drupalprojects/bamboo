@@ -82,11 +82,14 @@
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"
   <?php print $attributes; ?>>
     <?php print $user_picture; ?>
-    <?php print render($title_prefix); ?>
+
+  <?php print render($title_prefix); ?>
     <?php if (!$page && $title): ?>
     <header>
-        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url ?>" 
-                                                title="<?php print $title ?>"><?php print $title ?></a></h2>
+        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url ?>"
+       title="<?php print $title ?>"><?php print $title ?></a></h2>
+      <?php else: ?>
+        <?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>
     </header>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
@@ -106,8 +109,6 @@
   </div><!--//submit-wrapper-->
   <?php endif; ?>
 
-
-    <div<?php print $content_attributes; ?>>
         <?php
         // We hide the comments and links now so that we can render them later.
         hide($content['comments']);
@@ -120,8 +121,6 @@
           <?php print render($node_block); ?>
         </div>
       <?php endif; ?>
-
-    </div>
 
     <div class="clearfix">
         <?php if (!empty($content['links'])): ?>

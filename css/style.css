@@ -509,9 +509,8 @@ ul.pager li a:hover {
   color: #fff;
 }
 
-ul.pager {
-  position: relative;
-  top: 24px;
+article.last {
+  margin-bottom: 30px;
 }
 
 /* form elements */

@@ -9,6 +9,22 @@
  * Implements hook_preprocess_html().
  */
 function bamboo_preprocess_html(&$vars) {
+
+  $vars['rdf'] = new stdClass;
+
+  if (module_exists('rdf')) {
+    $vars['doctype'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">' . "\n";
+    $vars['rdf']->version = ' version="HTML+RDFa 1.1"';
+    $vars['rdf']->namespaces = $vars['rdf_namespaces'];
+    $vars['rdf']->profile = ' profile="' . $vars['grddl_profile'] . '"';
+  }
+  else {
+    $vars['doctype'] = '<!DOCTYPE html>' . "\n";
+    $vars['rdf']->version = '';
+    $vars['rdf']->namespaces = '';
+    $vars['rdf']->profile = '';
+  }
+
   drupal_add_css('//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700',array('type' => 'external'));
   drupal_add_css('//fonts.googleapis.com/css?family=Rosarivo:400,400italic&subset=latin,latin-ext',array('type' => 'external'));
 
@@ -170,7 +186,7 @@ function bamboo_breadcrumb($vars) {
 /**
  * Override or insert variables into the page template.
  */
-function bamboo_preprocess_page(&$vars) {
+function bamboo_preprocess_page(&$vars, $hook) {
   // Set variable for theme native main menu with sub links.
   if (!empty($vars['main_menu'])) {
   // Get the entire main menu tree.
@@ -188,6 +204,16 @@ function bamboo_preprocess_page(&$vars) {
   $file = theme_get_setting('theme_color_palette');
   if (theme_get_setting('bamboo_themelogo') == TRUE) {
     $vars['logo'] = base_path() . path_to_theme() . '/images/' . $file . '-logo.png';
+  }
+
+/*  if (arg(0) == 'node' && is_numeric(arg(1))) {
+    $node = &$vars['node'];
+  $vars['is_node'] = $vars['view_mode'] == 'full' && node_is_page($node);
+  }*/
+
+  $vars['is_node'] = false;
+  if (isset($vars['node'])) {
+    $vars['is_node'] = true;
   }
 
 }
@@ -212,7 +238,6 @@ function bamboo_menu_local_tasks(&$vars) {
   }
   return $output;
 }
-
 
 /**
  * Override or insert variables into the node template.
@@ -248,7 +273,6 @@ function bamboo_preprocess_node(&$vars) {
     else {
       $vars['node_block'] = '';
     }
-
 }
 
 /**

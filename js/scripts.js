@@ -20,10 +20,10 @@
       // Lets not render the menu until it's fully ready.
       // It's hidden with CSS initally
 
-     $('#main-menu ul').each(function() {
-        var depth = $(this).parents('ul').length;
-        $(this).addClass('ul-depth-' + depth);
-     });
+        $('#main-menu ul').each(function() {
+          var depth = $(this).parents('ul').length;
+          $(this).addClass('ul-depth-' + depth);
+        });
 
       /* toggle nav */
       $("#menu-icon").click(function() {
@@ -37,9 +37,12 @@
   $(".date-in-parts")
     .prependTo(".not-front.page-node #post-content");
 
-// global zebra stripes.
+// Global zebra stripes and first / last.
   $(".front article:visible:even").addClass("even");
   $(".front article:visible:odd").addClass("odd");
+  $(".front #post-content article:last").addClass("last");
+  $(".front #post-content article:first").addClass("first");
+
 
 // Set image captions for image field.
   $(".field-type-image img").each(function (i, ele) {
