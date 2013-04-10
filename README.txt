@@ -116,8 +116,8 @@ theme may allow for a custom path for local.css to avoid upgrade snags.
 -- NOTES --
 
 - This theme supports CSS3 features, i.e. round corners for modern browsers.
-However, there is no support for IE8 though there is an IE8 stylesheet and
-some defaults provided that it should work ok.
+- There is no support for IE8 and below though there is an IE8 stylesheet
+in the theme and some defaults are provided that it should work ok.
 
 - Inspiration for this theme comes from my surroundings in glorious sunny
 Southern California!
