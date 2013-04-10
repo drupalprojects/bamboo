@@ -1,5 +1,9 @@
 -- Change Log --
 
+bamboo 7.x-1.x-dev | April 10, 2013
+[#1966526]  by highrockmedia:
+IE8 - no menu
+
 bamboo 7.x-1.x-dev | April 3, 2013
 [#1957084]  by highrockmedia:
 Calendar Next Prev positions

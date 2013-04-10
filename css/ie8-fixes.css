@@ -58,3 +58,20 @@ body.bg-gray-gradient {
 body.bg-rust-gradient {
   background: #ce4c14 url("../images/bg-rust-grad.jpg") repeat-x fixed !important;
 }
+
+#main-menu ul {
+  display: block;
+}
+
+.sidebar-left .column,
+.sidebar-left .columns {
+  margin-left: 0;
+}
+
+.sidebar-left #content-wrapper .columns {
+  float: right;
+}
+
+.sidebar-left aside h2 {
+  margin-left: 10px;
+}

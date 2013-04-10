@@ -116,8 +116,8 @@ theme may allow for a custom path for local.css to avoid upgrade snags.
 -- NOTES --
 
 - This theme supports CSS3 features, i.e. round corners for modern browsers.
-However, there is no support for IE8. Media Queries will not work in
-IE8 but IE8 gracefully degrades to a 960 layout.
+However, there is no support for IE8 though there is an IE8 stylesheet and
+some defaults provided that it should work ok.
 
 - Inspiration for this theme comes from my surroundings in glorious sunny
 Southern California!
@@ -125,6 +125,10 @@ Southern California!
 If you required specific customizations that you are not able to do on your own,
 I can offer paid support. Please email me: contact@highrockmedia.com or
 through my website's contact form. http://highrockmedia.com/contact-us
+
+Buy me a Latte
+- Help support Bamboo and the Bamboo slideshow.
+http://highrockmedia.com/buy-me-latte
 
 ------------------------
 Danny Englander
