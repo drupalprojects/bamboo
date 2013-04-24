@@ -313,13 +313,13 @@ function bamboo_page_alter($page) {
    * initial-scale=0.31; maximum-scale=1.0; minimum-scale=0.25
    */
 
-    // Pinch and Zoom enabled. 
+    // Pinch and Zoom enabled.
     $viewport = array(
       '#type' => 'html_tag',
       '#tag' => 'meta',
       '#attributes' => array(
         'name' => 'viewport',
-        'content' => 'width=device-width, initial-scale=0.31, maximum-scale=1.0, minimum-scale=0.25, user-scalable=yes',
+        'content' => 'width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.55, user-scalable=yes',
       ),
     );
     drupal_add_html_head($viewport, 'viewport');
