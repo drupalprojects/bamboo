@@ -42,6 +42,7 @@ features[] = main_menu
 settings[bamboo_themelogo]  = 1
 settings[breadcrumbs]  = 1
 settings[theme_sidebar_location]  = sidebar_right
+settings[bamboo_viewport]  = 0
 settings[header_font_style]  = sans_serif
 settings[body_font_style]  = sans_serif
 settings[theme_color_palette]  = green_bamboo

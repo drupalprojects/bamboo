@@ -89,7 +89,7 @@
         <h2<?php print $title_attributes; ?>><a href="<?php print $node_url ?>"
        title="<?php print $title ?>"><?php print $title ?></a></h2>
       <?php else: ?>
-        <?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>
+        <?php if ($title): ?><h1<?php print $title_attributes; ?> class="page-title"><?php print $title; ?></h1><?php endif; ?>
     </header>
     <?php endif; ?>
     <?php print render($title_suffix); ?>

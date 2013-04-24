@@ -119,6 +119,15 @@ function bamboo_preprocess_html(&$vars) {
     }
     $vars['classes_array'][] = drupal_html_class('section-' . $section);
   }
+
+  // Test if page is a node or not and then add a body class.
+  if ($node = menu_get_object()) {
+    $vars['classes_array'][] = 'is-node';
+  }
+  else {
+    $vars['classes_array'][] = 'not-node';
+  }
+
 }
 
 /**
@@ -206,13 +215,9 @@ function bamboo_preprocess_page(&$vars, $hook) {
     $vars['logo'] = base_path() . path_to_theme() . '/images/' . $file . '-logo.png';
   }
 
-/*  if (arg(0) == 'node' && is_numeric(arg(1))) {
-    $node = &$vars['node'];
-  $vars['is_node'] = $vars['view_mode'] == 'full' && node_is_page($node);
-  }*/
-
+  // Check if it's a node and set a variable.
   $vars['is_node'] = false;
-  if (isset($vars['node'])) {
+  if ($node = menu_get_object()) {
     $vars['is_node'] = true;
   }
 
@@ -273,6 +278,7 @@ function bamboo_preprocess_node(&$vars) {
     else {
       $vars['node_block'] = '';
     }
+
 }
 
 /**
@@ -280,18 +286,44 @@ function bamboo_preprocess_node(&$vars) {
  */
 function bamboo_page_alter($page) {
   /* add the viewport meta tag which will render as:
-   * <meta name="viewport" content="width=device-width,
-   * initial-scale=1, maximum-scale=1"/>
    * see: https://developer.mozilla.org/en-US/docs/Mobile/Viewport_meta_tag
    * for docs
+   * <meta name="viewport" content="width=device-width, initial-scale=1.0
+   * maximum-scale=1, user-scalable=no" />
    */
-  $viewport = array(
-    '#type' => 'html_tag',
-    '#tag' => 'meta',
-    '#attributes' => array(
-      'name' => 'viewport',
-      'content' => 'width=device-width, initial-scale=1, maximum-scale=1',
-    ),
-  );
-  drupal_add_html_head($viewport, 'viewport');
+
+  if (theme_get_setting('bamboo_viewport') == FALSE) {
+
+    // No pinch and zoom
+    $viewport = array(
+      '#type' => 'html_tag',
+      '#tag' => 'meta',
+      '#attributes' => array(
+        'name' => 'viewport',
+        'content' => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
+      ),
+    );
+    drupal_add_html_head($viewport, 'viewport');
+  }
+  else {
+
+  /*
+   * user-scalable=yes;
+   * width=device-width;
+   * initial-scale=0.31; maximum-scale=1.0; minimum-scale=0.25
+   */
+
+    // Pinch and Zoom enabled. 
+    $viewport = array(
+      '#type' => 'html_tag',
+      '#tag' => 'meta',
+      '#attributes' => array(
+        'name' => 'viewport',
+        'content' => 'width=device-width, initial-scale=0.31, maximum-scale=1.0, minimum-scale=0.25, user-scalable=yes',
+      ),
+    );
+    drupal_add_html_head($viewport, 'viewport');
+
+  }
+
 }

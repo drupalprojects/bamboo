@@ -124,4 +124,12 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     '#description' => t("Check this box if you are going to have tertiary (third level drop down menus)"),
   );
 
+  $form['additional_settings']['other_settings']['bamboo_viewport'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Use Touch device pinch and zoom?'),
+    '#default_value' => theme_get_setting('bamboo_viewport', 'bamboo'),
+    '#description' => t("** Check this box ONLY if you want to enable touch device users to be able to pinch and zoom.
+    Note this is purely experimental and if you enable this, there is no support for layouts breaking."),
+  );
+
 }
