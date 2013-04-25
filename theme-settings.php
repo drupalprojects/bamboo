@@ -114,7 +114,9 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'checkbox',
     '#title' => t('Use local.css?'),
     '#default_value' => theme_get_setting('bamboo_localcss', 'bamboo'),
-    '#description' => t("Only check this box if you have renamed local.sample.css to local.css."),
+    '#description' => t("This setting allows you to use your own custom css file within the Bamboo
+    theme folder. Only check this box if you have renamed local.sample.css to local.css.
+    You must clear the Drupal cache after doing this."),
   );
 
   $form['additional_settings']['other_settings']['bamboo_tertiarymenu'] = array(
@@ -130,6 +132,28 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value' => theme_get_setting('bamboo_viewport', 'bamboo'),
     '#description' => t("** Check this box ONLY if you want to enable touch device users to be able to pinch and zoom.
     Note this is purely experimental and if you enable this, there is no support for layouts breaking."),
+  );
+
+  $form['custom_css_path_settings'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Custom CSS Path Settings'),
+    '#description' => t("<strong style='color: #cc0000;'>Note only use this feature if you know what you are doing!</strong>"),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+
+  $form['custom_css_path_settings']['custom_css_path']['bamboo_custom_css_location'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Only check the box if you want to specify a custom path below to your local css file.'),
+    '#default_value' => theme_get_setting('bamboo_custom_css_location', 'bamboo'),
+  );
+
+  $form['custom_css_path_settings']['custom_css_path']['bamboo_custom_css_path'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Path to Custom Stylesheet'),
+    '#description' => t('Specify a custom path to the local.css file without the leading slash:
+    e.g.: sites/default/files/custom-css/local.css you must check the box above for this to work.'),
+    '#default_value' => theme_get_setting('bamboo_custom_css_path', 'bamboo'),
   );
 
 }

@@ -78,16 +78,30 @@ function bamboo_preprocess_html(&$vars) {
   $file = theme_get_setting('theme_sidebar_location');
   $vars['classes_array'][] = drupal_html_class($file);
 
-  // Use local.css if true.
+  // Local css within theme folder if checked.
   if (theme_get_setting('bamboo_localcss') == TRUE) {
      drupal_add_css(path_to_theme() . '/css/local.css',
       array(
         'group' => CSS_THEME,
         'media' => 'screen',
         'preprocess' => TRUE,
-        'weight' => '9999',
+        'weight' => '9998',
       )
     );
+  }
+
+  // Custom css file path if checked and file exists.
+  if (theme_get_setting('bamboo_custom_css_location') == TRUE) {
+    $path =  theme_get_setting('bamboo_custom_css_path');
+    if (file_exists($path)) {
+      drupal_add_css("$path",
+        array(
+          'group' => CSS_THEME,
+          'preprocess' => TRUE,
+          'weight' => 9999
+        )
+      );
+    }
   }
 
   drupal_add_js(path_to_theme() . '/js/scripts.js',
