@@ -1,5 +1,13 @@
 -- Change Log --
 
+bamboo 7.x-1.x-dev | May 2, 2013
+[#1922768]  by highrockmedia and mheinke
+Allow for a custom path for local.css
+
+bamboo 7.x-1.x-dev | May 2, 2013
+[#1975464]  by highrockmedia
+Please add Pinch and Zoom Gesture Support
+
 bamboo 7.x-1.x-dev | April 10, 2013
 [#1966526]  by highrockmedia:
 IE8 - no menu

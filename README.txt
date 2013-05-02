@@ -50,9 +50,11 @@ various shapes and sizes a custom uploaded logos will have on the
 theme so unfortunately support cannot be offered through the issue
 queue for things like this.
 
-- local.css
-Check the box for local.css if you have copied or renamed
-local.sample.css to local.css.
+- Local CSS
+Choose to enable local.css file within the theme folder.
+
+- Custom Path CSS
+ Define a custom path for your own css file to use with the theme.
 
 - Tertiary Menus
 There is a theme setting checkbox if you will be using tertiary menus.
@@ -69,9 +71,17 @@ and use your own third party menu system such
 as Menu Block or Superfish Module. You are responsible for any
 styling and CSS for this. (Use local.css as mentioned above.)
 
-- Node block region - use this region to have a block region within a
+- Node block region
+Use this region to have a block region within a
 node which will appear right after the content but before any node links
 or comments. Useful for ads or otherwise.
+
+- Pinch and Zoom for Touch friendly devices
+- Option to choose whether to pinch and zoom on a touch sensitive device or not. Default
+is off. Note, there is no support for layouts breaking or otherwise if you choose to
+enable this option.
+
+
 
 -- ADDITIONAL FEATURES --
 
