@@ -119,7 +119,7 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     You must clear the Drupal cache after doing this."),
   );
 
-    $form['additional_settings']['other_settings']['bamboo_grid_container_width'] = array(
+  $form['additional_settings']['other_settings']['bamboo_grid_container_width'] = array(
     '#type' => 'textfield',
     '#title' => t('Optional grid width value. e.g 1020px, 100% etc...'),
     '#default_value' => theme_get_setting('bamboo_grid_container_width', 'bamboo'),
