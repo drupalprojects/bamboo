@@ -119,6 +119,17 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     You must clear the Drupal cache after doing this."),
   );
 
+    $form['additional_settings']['other_settings']['bamboo_grid_container_width'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Optional grid width value. e.g 1020px, 100% etc...'),
+    '#default_value' => theme_get_setting('bamboo_grid_container_width', 'bamboo'),
+    '#description' => t("This setting allows you to set the width of the entire gird container. 
+      Leave blank for the default max width of 1200px.  All inner grids are percentage based 
+      so this should work with most any value you set within reason. 
+      <strong style='color: #cc0000;'>*** Warning, only use this if you know what 
+      you are doing!</strong>"),
+  );
+
   $form['additional_settings']['other_settings']['bamboo_tertiarymenu'] = array(
     '#type' => 'checkbox',
     '#title' => t('Use tertiary drop down menus?'),

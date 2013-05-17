@@ -65,8 +65,8 @@
  */
 ?>
 
-<header id="head" role="banner" class="container">
-  <hgroup class="ten columns alpha">
+<header id="head" role="banner" class="grid-container" style="max-width:<?php print $thegrid; ?>;">
+  <div class="grid-60">
 
     <div id="logo">
       <?php if ($logo): ?>
@@ -88,17 +88,17 @@
       <?php endif; ?>
     </div>
 
-  </hgroup>
+  </div>
 
-<div id="top-links" class="six columns omega">
+<div id="top-links" class="grid-40">
   <?php if ($page['top_links']): ?>
     <?php print render($page['top_links']); ?>
   <?php endif; ?>
 </div>
 </header>
 
-<div id="menu-wrapper" class="container">
-  <nav id="main-menu" role="navigation" class="sixteen columns alpha omega">
+<div id="menu-wrapper" class="grid-container" style="max-width:<?php print $thegrid; ?>;">
+  <nav id="main-menu" role="navigation" class="grid-100">
     <div class="menu-navigation-container">
       <!-- Theme native drop downs and mobile menu-->
       <?php if ($primary_nav): ?>
@@ -117,11 +117,11 @@
 </div>
 <!-- end main-menu -->
 
-<div class="container" id="content-wrapper">
+<div class="grid-container" id="content-wrapper" style="max-width:<?php print $thegrid; ?>;">
 
   <?php if ($page['hero_first']): ?>
     <!--above breadcrumbs-->
-    <div id="hero-first" class="sixteen columns">
+    <div id="hero-first" class="grid-100">
       <?php print render($page['hero_first']); ?>
     </div>
   <?php endif; ?>
@@ -134,7 +134,7 @@
 
     <?php if ($page['hero_second']): ?>
     <!--below breadcrumbs-->
-    <div id="hero-second" class="sixteen columns">
+    <div id="hero-second" class="grid-100">
       <?php print render($page['hero_second']); ?>
     </div>
     <?php endif; ?>
@@ -154,15 +154,15 @@
   switch ($bottom) :
 
     case 1:
-      $preface_wid = "sixteen columns";
+      $preface_wid = "grid-100";
       break;
 
     case 2:
-      $preface_wid = "eight columns";
+      $preface_wid = "grid-50";
       break;
 
     case 3:
-      $preface_wid = "one-third column";
+      $preface_wid = "grid-33";
       break;
 
   endswitch;
@@ -189,12 +189,12 @@
   <?php endif; ?>
 
   <?php if ($page['sidebar_first']): ?>
-    <?php $contentwid = "eleven"; ?>
+    <?php $contentwid = "66"; ?>
   <?php else: ?>
-    <?php $contentwid = "sixteen"; ?>
+    <?php $contentwid = "100"; ?>
   <?php endif; ?>
 
-  <div id="content" class="<?php print $contentwid; ?> columns">
+  <div id="content" class="grid-<?php print $contentwid; ?>">
     <?php if (!empty($tabs['#primary'])): ?>
       <div class="tabs-wrapper"><?php print render($tabs); ?></div>
     <?php endif; ?>
@@ -222,14 +222,14 @@
   </div>
 
     <?php if ($page['sidebar_first']): ?>
-    <aside id="sidebar-first" role="complementary" class="sidebar five columns">
+    <aside id="sidebar-first" role="complementary" class="sidebar grid-33">
     <?php print render($page['sidebar_first']); ?>
     </aside><!-- /#sidebar-first -->
 <?php endif; ?>
 
 </div>
 
-<footer id="colophon" class="container">
+<footer id="colophon" class="grid-container" style="max-width:<?php print $thegrid; ?>;">
 
   <?php
   // Define and divide the footer page regions.
@@ -242,15 +242,15 @@
     switch ($bottom) :
 
       case 1:
-        $footer_wid = "sixteen columns";
+        $footer_wid = "grid-100";
         break;
 
       case 2:
-        $footer_wid = "eight columns";
+        $footer_wid = "grid-50";
         break;
 
       case 3:
-        $footer_wid = "one-third column";
+        $footer_wid = "grid-33";
         break;
 
     endswitch;

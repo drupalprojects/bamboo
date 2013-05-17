@@ -112,6 +112,9 @@ function bamboo_preprocess_html(&$vars) {
     )
   );
 
+// Possibly using this later for a grid width body class.
+//$vars['classes_array'][] = drupal_html_class('grid-' . $gridwidth );
+
   // Use tertiary menus = true.
   if (theme_get_setting('bamboo_tertiarymenu') == TRUE) {
     $vars['classes_array'][] = drupal_html_class('tertiarymenu');
@@ -234,6 +237,10 @@ function bamboo_preprocess_page(&$vars, $hook) {
   if ($node = menu_get_object()) {
     $vars['is_node'] = true;
   }
+
+// Set the custom grid width in a variable.
+  $gridwidth =  theme_get_setting('bamboo_grid_container_width');
+  $vars['thegrid'] = $gridwidth;
 
 }
 
