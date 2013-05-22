@@ -293,6 +293,15 @@ function bamboo_preprocess_node(&$vars) {
       $vars['node_block'] = '';
     }
 
+        // Global node.
+    $node = $vars['node'];
+
+    // Set date variables using drupal's format_date function
+    // Based on <?php echo format_date($node->created, "custom", "M");.
+    $vars['thedate'] = format_date($node->created, "custom", "j");
+    $vars['themonth'] = format_date($node->created, "custom", "M");
+    $vars['theyear'] = format_date($node->created, "custom", "Y");
+
 }
 
 /**
