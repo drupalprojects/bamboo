@@ -102,9 +102,9 @@
 
   <!-- Then show the date in parts for better theming. -->
   <div class="date-in-parts">
-    <span class="day"><?php echo date("j", $node->created); ?></span>
-    <span class="month"><?php echo date("M", $node->created); ?></span>
-    <span class="year"><?php echo date("Y", $node->created); ?></span>
+    <span class="day"><?php echo format_date($node->created, "custom", "j");  ?></span>
+    <span class="month"><?php echo format_date($node->created, "custom", "M");  ?></span>
+    <span class="year"><?php echo format_date($node->created, "custom", "Y");  ?></span>
   </div><!--//date-in-parts -->
   </div><!--//submit-wrapper-->
   <?php endif; ?>
