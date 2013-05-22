@@ -333,6 +333,10 @@ aside.sidebar .block-content ul li,
   padding: 2px 0 2px 10px;
 }
 
+#preface-wrapper {
+  overflow: hidden;
+}
+
 #preface-wrapper .block h2 {
   -moz-border-radius-topright: 24px;
   -webkit-border-top-right-radius: 24px;
