@@ -262,12 +262,14 @@ function bamboo_menu_local_tasks(&$vars) {
  * Override or insert variables into the node template.
  */
 function bamboo_preprocess_node(&$vars) {
+
+  // Global node.
   $node = $vars['node'];
-  if ($vars['view_mode'] == 'full' && node_is_page($vars['node'])) {
+  if ($vars['view_mode'] == 'full' && node_is_page($node)) {
     $vars['classes_array'][] = 'node-full';
   }
 
-  if ($vars['view_mode'] == 'teaser' && node_is_page($vars['node'])) {
+  if ($vars['view_mode'] == 'teaser' && node_is_page($node)) {
     $vars['classes_array'][] = 'node-teaser';
   }
 
@@ -292,9 +294,6 @@ function bamboo_preprocess_node(&$vars) {
     else {
       $vars['node_block'] = '';
     }
-
-        // Global node.
-    $node = $vars['node'];
 
     // Set date variables using drupal's format_date function
     // Based on <?php echo format_date($node->created, "custom", "M");.
