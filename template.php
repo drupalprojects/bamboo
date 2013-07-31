@@ -142,6 +142,14 @@ function bamboo_preprocess_html(&$vars) {
     $vars['classes_array'][] = 'not-node';
   }
 
+  // Add a body class is the theme logo is hidden or not.
+  if (theme_get_setting('bamboo_themelogo') == TRUE) {
+    $vars['classes_array'][] = 'theme-logo';
+  }
+  else {
+    $vars['classes_array'][] = 'theme-logo-none';
+  }
+
 }
 
 /**
