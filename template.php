@@ -9,8 +9,7 @@
  * Implements hook_preprocess_html().
  */
 function bamboo_preprocess_html(&$vars) {
-
-  $vars['rdf'] = new stdClass;
+$vars['rdf'] = new stdClass;
 
   if (module_exists('rdf')) {
     $vars['doctype'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">' . "\n";
@@ -104,13 +103,15 @@ function bamboo_preprocess_html(&$vars) {
     }
   }
 
-  drupal_add_js(path_to_theme() . '/js/scripts.js',
+  // Add general JS.
+  drupal_add_js(drupal_get_path('theme', 'bamboo') . '/js/scripts.js',
     array(
       'group' => JS_THEME,
       'preprocess' => TRUE,
       'weight' => '9999',
-    )
-  );
+      )
+    );
+  $vars['scripts'] = drupal_get_js();
 
   // Use tertiary menus = true.
   if (theme_get_setting('bamboo_tertiarymenu') == TRUE) {
