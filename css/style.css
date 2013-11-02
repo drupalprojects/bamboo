@@ -878,6 +878,13 @@ tr:nth-child(even) td:hover {
   color: #fff;
 }
 
+tbody tr:not(.draggable):hover,
+.forum-table tr:not(.draggable).even:hover,
+.forum-table tr:not(.draggable).odd:hover {
+  background: #666;
+  color: #fff !important;
+}
+
 tbody tr:hover {
   background: #666;
   color: #fff !important;
@@ -890,6 +897,12 @@ tr:hover td {
 tbody tr td a:hover,
 tbody tr:hover a {
   color: #fff !important;
+}
+
+tbody tr.draggable td a:hover,
+tbody tr.draggable:hover,
+tbody tr.draggable:hover a {
+  color: #333 !important;
 }
 
 tr td ul.inline li {
@@ -999,4 +1012,70 @@ ul.action-links li a {
 
 div.admin .left {
   margin: 0
+}
+
+/* Advanced forum styling */
+.forum-post-panel-main.clearfix {
+  clear: none;
+}
+
+.af-button-large,
+.af-button-small,
+.author-pane-link,
+.last-post-link a {
+  display: block;
+  border-top: none;
+  background: #e7e7e7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dfdfdfd), to(#c1c1c1));
+  background: -moz-linear-gradient(top, #dfdfdfd, #c1c1c1);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  color: #333;
+  font-family: inherit;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.af-button-small {
+  margin-right: 10px;
+}
+
+#content .forum-post-links ul.links li {
+  margin: 0;
+}
+
+.forum-node-create-links-top {
+  margin-bottom: 10px;
+}
+
+.forum-post-info {
+  font-size: 1.4em;
+  color: #4c4c4c;
+  display: block;
+  padding: 5px 0;
+}
+
+.author-pane a.username {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.forum-post-links ul.links.inline .icon-fixed-width {
+  display: none;
+}
+
+.forum-post-title h2,
+.forum-post-panel-main .post-title h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.forum-posted-on,
+.forum-post-number a {
+  color: #666 !important;
 }
