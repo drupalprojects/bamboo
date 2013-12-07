@@ -1,16 +1,17 @@
-name = Bamboo
+name = Bamboo sub-theme Starter Kit
 description = Bamboo is a responsive Drupal 7 theme designed and developed by Danny Englander, <a href="http://highrockmedia.com">High Rock Media</a>
 core = 7.x
 engine = phptemplate
+base theme = bamboo
 
 ; CSS --------------------
 
-; --- Note, 'responsive.css' must come last!
-stylesheets[all][] = css/menu.css
-stylesheets[all][] = css/normalize.css
-stylesheets[all][] = css/style.css
-stylesheets[all][] = css/design.css
-stylesheets[all][] = css/responsive.css
+; --- Your subtheme css files.
+; Rename STARTERKIT.css to something meaningful.
+; The actual name you give the file should match what's below.
+; You'll then need to ucomment by removing the semi-colon.
+
+;stylesheets[all][] = css/STARTERKIT.css
 
 ; Regions --------------------
 regions[top_links]       = Top Links

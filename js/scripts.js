@@ -34,8 +34,7 @@
       // End mobile menu.
 
 // prepend the post date before the h1.
-  $(".date-in-parts")
-    .prependTo(".not-front.page-node #post-content");
+  $(".date-in-parts").prependTo(".not-front.page-node #post-content");
 
 // Global zebra stripes and first / last.
   $(".front article:visible:even").addClass("even");
