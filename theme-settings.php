@@ -134,6 +134,13 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     Note this is purely experimental and if you enable this, there is no support for layouts breaking."),
   );
 
+  $form['additional_settings']['other_settings']['bamboo_imagecaptions'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Use Image Captions?'),
+    '#default_value' => theme_get_setting('bamboo_imagecaptions', 'bamboo'),
+    '#description' => t("Check this box if you would like captions for imagefield images."),
+  );
+
   $form['custom_css_path_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Custom CSS Path Settings'),

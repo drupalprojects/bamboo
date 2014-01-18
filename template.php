@@ -77,6 +77,11 @@ $vars['rdf'] = new stdClass;
   $file = theme_get_setting('theme_sidebar_location');
   $vars['classes_array'][] = drupal_html_class($file);
 
+  // If imagecaption is true, add class.
+  if (theme_get_setting('bamboo_imagecaptions') == TRUE) {
+    $vars['classes_array'][] = drupal_html_class('imagecaption');
+  }
+
   // Local css within theme folder if checked.
   if (theme_get_setting('bamboo_localcss') == TRUE) {
      drupal_add_css(path_to_theme() . '/css/local.css',

@@ -42,8 +42,8 @@
   $(".front #post-content article:last").addClass("last");
   $(".front #post-content article:first").addClass("first");
 
-
 // Set image captions for image field.
+ if ( $("body").hasClass("imagecaption") ) {
   $(".field-type-image img").each(function (i, ele) {
     var alt = this.alt;
       if ($("img-caption").length == 0) {
@@ -54,6 +54,7 @@
           $(this).closest(".field-type-image .field-item").append("");
         }
   });
+}
 
 // Add an "arrow" span to primary menus that are expanded.
   $('#main-menu ul li.expanded').each(function() {
