@@ -49,3 +49,4 @@ settings[theme_color_palette]  = green_bamboo
 settings[theme_bg]  = dark_linen
 settings[bamboo_tertiarymenu]  = 0
 settings[bamboo_imagecaptions]  = 1
+settings[bamboo_tablehover]  = 0

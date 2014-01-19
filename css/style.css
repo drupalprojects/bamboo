@@ -873,10 +873,6 @@ tr:nth-child(odd) td {
   background: #fefefe;
 }
 
-tr:hover td {
-  background-color: transparent;
-}
-
 tr td ul.inline li {
   margin-bottom: 9px;
   display: block;
@@ -1046,4 +1042,40 @@ div.admin .left {
 .forum-posted-on,
 .forum-post-number a {
   color: #666 !important;
+}
+
+/* table hover effect: experimental! */
+
+.tablehover tr:hover td {
+  background-color: transparent;
+}
+
+.tablehover tr:nth-child(odd) td:hover,
+.tablehover tr:nth-child(even) td:hover {
+  color: #fff;
+}
+
+.tablehover tbody tr:not(.draggable):hover,
+.tablehover .forum-table tr:not(.draggable).even:hover,
+.tablehover forum-table tr:not(.draggable).odd:hover,
+.tablehover tbody tr:hover,
+.tablehover tbody tr td a:hover,
+.tablehover tbody tr:hover a {
+  background: #666;
+  color: #fff !important;
+}
+
+.tablehover tbody tr.draggable td a:hover,
+.tablehover tbody tr.draggable:hover,
+.tablehover tbody tr.draggable:hover a,
+.tablehover a.td-hovered {
+  color: #fff !important;
+}
+
+.tablehover .draggable a.tabledrag-handle {
+  margin-left: 0;
+}
+
+.tablehover  table .warning.tabledrag-changed {
+  margin-left: 15px;
 }

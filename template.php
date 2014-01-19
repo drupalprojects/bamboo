@@ -82,6 +82,11 @@ $vars['rdf'] = new stdClass;
     $vars['classes_array'][] = drupal_html_class('imagecaption');
   }
 
+  // If tablehover is true, add class.
+  if (theme_get_setting('bamboo_tablehover') == TRUE) {
+    $vars['classes_array'][] = drupal_html_class('tablehover');
+  }
+
   // Local css within theme folder if checked.
   if (theme_get_setting('bamboo_localcss') == TRUE) {
      drupal_add_css(path_to_theme() . '/css/local.css',
