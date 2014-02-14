@@ -98,7 +98,7 @@
   <?php print render($title_suffix); ?>
 
   <?php if ($display_submitted): ?>
-    <div id="submit-wrapper">
+    <div class="submit-wrapper">
 
       <!-- Overidden in template.php to show just username. -->
       <span class="submitted"><?php print $submitted; ?></span>
