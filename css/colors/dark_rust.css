@@ -1,0 +1,74 @@
+/* Dark Rust */
+a {
+  color: #b54617;
+}
+
+a:hover {
+  color: #667;
+}
+
+#preface-wrapper .block h2,
+.sidebar .block h2,
+.date-in-parts,
+nav#main-menu ul li li a,
+input[type="submit"],
+input[type="reset"],
+button {
+  background-color: #a7461c;
+  /* ie10 consumer preview */
+  background-image: -ms-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
+  /* mozilla firefox */
+  background-image: -moz-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
+  /* opera */
+  background-image: -o-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
+  /* webkit (safari/chrome 10) */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ce4c14), color-stop(1, #a7461c));
+  /* webkit (chrome 11+) */
+  background-image: -webkit-linear-gradient(bottom, #ce4c14 0%, #a7461c 100%);
+  /* w3c markup, ie10 release preview */
+  background-image: linear-gradient(to top, #ce4c14 0%, #a7461c 100%);
+  color: #eaeaea;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #b54617;
+}
+
+pre,
+code {
+  background-color: #b54617;
+  color: #eaeaea;
+}
+
+.comment.odd {
+  background-color: #d9bc9b;
+}
+
+.comment.even {
+  background-color: #cac1b6;
+}
+
+blockquote,
+q {
+  background: #dedede url('../images/quote-turq.png') no-repeat;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  background-color: #999;
+  cursor: pointer;
+}
+
+nav#main-menu ul li li a {
+  background-color: #b74819;
+}
+
+nav#main-menu ul li li a:hover {
+  background-color: #999;
+}

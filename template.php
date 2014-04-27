@@ -123,6 +123,17 @@ $vars['rdf'] = new stdClass;
     );
   $vars['scripts'] = drupal_get_js();
 
+  // Set the colors css file based on the color palette chosen.
+  $color = theme_get_setting('theme_color_palette');
+  drupal_add_css(drupal_get_path('theme', 'bamboo') . '/css/colors/' . $color . '.css',
+    array(
+      'group' => CSS_THEME,
+      'media' => 'screen',
+      'preprocess' => TRUE,
+      'weight' => '9998',
+    )
+  );
+
   // Use tertiary menus = true.
   if (theme_get_setting('bamboo_tertiarymenu') == TRUE) {
     $vars['classes_array'][] = drupal_html_class('tertiarymenu');
