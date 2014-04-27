@@ -18,9 +18,9 @@
 /* #Base 960 Grid
 ================================================== */
 .container {
-  position: relative;
   margin: 0 auto;
   padding: 0;
+  position: relative;
   width: 960px;
 }
 
@@ -28,8 +28,8 @@
 .columns {
   display: inline;
   float: left;
-  margin-right: 10px;
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 .row {
@@ -211,20 +211,20 @@
 
   .container .column,
   .container .columns {
-    margin-right: 10px;
     margin-left: 10px;
+    margin-right: 10px;
   }
 
   .column.alpha,
   .columns.alpha {
-    margin-right: 10px;
     margin-left: 0;
+    margin-right: 10px;
   }
 
   .column.omega,
   .columns.omega {
-    margin-right: 0;
     margin-left: 10px;
+    margin-right: 0;
   }
 
   .container .one.column {
@@ -431,17 +431,17 @@
   }
 
   .sidebar-right aside h2 {
-    margin-right: -10px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+    margin-right: -10px;
   }
 
   .sidebar-left aside h2 {
-    margin-left: 10px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+    margin-left: 10px;
   }
 
   .form-text, textarea,
@@ -515,8 +515,8 @@
   #site-title,
   #site-description {
     float: none;
-    margin: 0;
     line-height: 1em;
+    margin: 0;
   }
 
   .flexslider p {
@@ -551,30 +551,30 @@
   }
 
   .flex-direction-nav li .prev {
-    right: 44px;
     bottom: 74px;
+    right: 44px;
   }
 
   .flex-direction-nav li .next {
-    right: 6px;
-    bottom: 74px;
     background-position: -32px 0;
+    bottom: 74px;
+    right: 6px;
   }
 
   .date-in-parts {
+    background: #8ea61f;
+    height: auto;
     margin-bottom: 8px;
     padding-left: 24%;
-    width: 70%;
-    height: auto;
-    background: #8ea61f;
     text-align: center;
+    width: 70%;
   }
 
   .date-in-parts span {
     float: left;
     margin: 0;
-    padding-top: 2px;
     padding-left: 7px;
+    padding-top: 2px;
     text-align: center;
   }
 
@@ -591,17 +591,17 @@
   }
 
   .sidebar-right aside h2 {
-    margin-right: -10px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+    margin-right: -10px;
   }
 
   .sidebar-left aside h2 {
-    margin-left: 10px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+    margin-left: 10px;
   }
 
   .form-text, textarea, input[type="text"],
@@ -617,11 +617,11 @@
 ================================================== */
 /* Self Clearing Goodness */
 .container:after {
-  display: block;
-  visibility: hidden;
   clear: both;
-  height: 0;
   content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
 }
 
 /* Use clearfix class on parent to clear nested columns,
@@ -630,12 +630,12 @@
 .clearfix:after,
 .row:before,
 .row:after {
-  display: block;
-  visibility: hidden;
-  overflow: hidden;
-  width: 0;
-  height: 0;
   content: '\0020';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
 }
 
 .row:after,
@@ -649,15 +649,15 @@
 }
 
 .clear {
-  display: block;
-  visibility: hidden;
   clear: both;
-  overflow: hidden;
-  width: 0;
+  display: block;
   height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
 }
 
 img.scale-with-grid {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
