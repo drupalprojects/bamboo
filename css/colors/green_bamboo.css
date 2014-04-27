@@ -1,0 +1,81 @@
+/* Green Bamboo */
+
+a {
+  color: #8ea61f;
+}
+
+a:hover {
+  color: #667;
+}
+
+#preface-wrapper .block h2,
+.sidebar .block h2,
+.date-in-parts,
+input[type="submit"],
+input[type="reset"],
+button {
+  background-color: #7e8e34;
+  /* ie10 consumer preview */
+  background-image: -ms-linear-gradient(bottom, #a6bb47 0%, #7e8e34 100%);
+  /* mozilla firefox */
+  background-image: -moz-linear-gradient(bottom, #a6bb47 0%, #7e8e34 100%);
+  /* opera */
+  background-image: -o-linear-gradient(bottom, #a6bb47 0%, #7e8e34 100%);
+  /* webkit (safari/chrome 10) */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #a6bb47), color-stop(1, #7e8e34));
+  /* webkit (chrome 11+) */
+  background-image: -webkit-linear-gradient(bottom, #a6bb47 0%, #7e8e34 100%);
+  /* w3c markup, ie10 release preview */
+  background-image: linear-gradient(to top, #a6bb47 0%, #7e8e34 100%);
+  color: #eaeaea;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #8ea61f;
+}
+
+pre,
+code {
+  background-color: #d2df95;
+}
+
+.comment.odd {
+  background-color: #d6ddb3;
+}
+
+.comment.even {
+  background-color: #d8dbc9;
+}
+
+.comment .submitted {
+  color: #899a39;
+}
+
+.comment .submitted a {
+  border-bottom: 1px dotted #333;
+  color: #667;
+}
+
+input[type="submit"] {
+  color: #fff;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  background-color: #999;
+  cursor: pointer;
+}
+
+nav#main-menu ul li li a {
+  background-color: #899b39;
+}
+
+nav#main-menu ul li li a:hover {
+  background-color: #999;
+}

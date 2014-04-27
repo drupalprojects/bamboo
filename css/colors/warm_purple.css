@@ -1,0 +1,64 @@
+/* Warm Purple */
+
+a {
+  color: #626584;
+}
+
+a:hover {
+  color: #667;
+}
+
+#preface-wrapper .block h2,
+.sidebar .block h2,
+.date-in-parts,
+nav#main-menu ul li li a,
+input[type="submit"],
+input[type="reset"],
+button {
+  background-color: #494c62;
+  background-image: -ms-linear-gradient(top, #626584 0%, #494c62 100%);
+  background-image: -moz-linear-gradient(top, #626584 0%, #494c62 100%);
+  background-image: -o-linear-gradient(top, #626584 0%, #494c62 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #626584), color-stop(1, #494c62));
+  background-image: -webkit-linear-gradient(top, #626584 0%, #494c62 100%);
+  background-image: linear-gradient(to bottom, #626584 0%, #494c62 100%);
+  color: #eaeaea;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #626584;
+}
+
+pre,
+code {
+  background-color: #7e76a3;
+  color: #fff;
+}
+
+.comment.odd {
+  background-color: #cecdd2;
+}
+
+.comment.even {
+  background-color: #e0dee8;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  background-color: #999;
+  cursor: pointer;
+}
+
+nav#main-menu ul li li a {
+  background-color: #4d5067;
+}
+
+nav#main-menu ul li li a:hover {
+  background-color: #999;
+}
