@@ -79,39 +79,52 @@
  */
 ?>
 
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"
-  <?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix" <?php print $attributes; ?>>
+
   <?php print $user_picture; ?>
 
-  <?php print render($title_prefix); ?>
-
-  <?php if (!$page && $title): ?>
-
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url ?>"
-                                            title="<?php print $title ?>"><?php print $title ?></a>
-    </h2>
-  <?php else: ?>
-    <?php if ($title): ?>
-      <h1<?php print $title_attributes; ?> class="page-title"><?php print $title; ?></h1><?php endif; ?>
-
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
+  <header class="article-header">
 
   <?php if ($display_submitted): ?>
-    <div class="submit-wrapper">
-
-      <!-- Overidden in template.php to show just username. -->
-      <span class="submitted"><?php print $submitted; ?></span>
+   <div class="submit-wrapper">
 
       <!-- Then show the date in parts for better theming. -->
       <div class="date-in-parts">
         <span class="day"><?php print $thedate; ?></span>
         <span class="month"><?php print $themonth; ?></span>
         <span class="year"><?php print $theyear; ?></span>
-      </div>
-      <!--//date-in-parts -->
+      </div><!--//date-in-parts -->
+
     </div><!--//submit-wrapper-->
   <?php endif; ?>
+
+  <div class="title-wrapper">
+  <?php print render($title_prefix); ?>
+
+  <?php if (!$page && $title): ?>
+
+    <h2<?php print $title_attributes; ?>>
+      <a href="<?php print $node_url ?>" title="<?php print $title ?>">
+        <?php print $title ?>
+      </a>
+    </h2>
+  <?php else: ?>
+
+    <!-- node h1 title -->
+    <?php if ($title): ?>
+      <h1<?php print $title_attributes; ?>><?php print $title; ?></h1>
+    <?php endif; ?>
+
+  <?php endif; ?>
+  <?php print render($title_suffix); ?>
+
+  <!-- Overidden in template.php to show just username. -->
+    <?php if ($display_submitted): ?>
+<?php print $submitted; ?>
+    <?php endif; ?>
+
+  </div><!-- // submitted -->
+  </header>
 
   <?php
   // We hide the comments and links now so that we can render them later.
