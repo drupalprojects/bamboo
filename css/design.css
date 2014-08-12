@@ -107,6 +107,10 @@ body.body-font-serif .menu-navigation-container ul.menu li a {
   color: #333;
 }
 
+#third-party-menu.container {
+  background-color: #fff;
+}
+
 /* Color Palettes*/
 
 /* Green Bamboo */

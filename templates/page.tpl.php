@@ -107,15 +107,20 @@
         <?php print render($primary_nav); ?>
       </div>
       <?php endif; ?>
-
-      <!-- for third party menu system modules like superfish-->
-      <?php if ($page['main_menu']): ?>
-        <?php print render($page['main_menu']); ?>
-      <?php endif; ?>
     </div>
   </nav>
 </div>
 <!-- end main-menu -->
+
+
+<?php if ($page['main_menu']): ?>
+  <!-- for third party menu system modules like superfish-->
+  <div id="third-party-menu" class="container">
+    <div class="sixteen columns"
+    <?php print render($page['main_menu']); ?>
+  </div>
+  </div>
+<?php endif; ?>
 
 <div class="container" id="content-wrapper">
 

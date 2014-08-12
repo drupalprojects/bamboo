@@ -13,6 +13,12 @@
  */
 function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
 
+  // @ theme_form_system_theme_settings_alter() name-clash.
+  // See http://drupal.org/node/943212.
+  if (isset($form_id)) {
+    return;
+  }
+
   $form['bamboo_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Bamboo Theme Settings'),
