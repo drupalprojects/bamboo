@@ -11,12 +11,11 @@
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
+function bamboo_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL) {
 
   // @ theme_form_system_theme_settings_alter() name-clash.
   // See http://drupal.org/node/943212.
-  if (isset($form_id)) {
-    return;
+  if ($form_id) {
   }
 
   $form['bamboo_settings'] = array(
@@ -29,14 +28,14 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['bamboo_settings']['breadcrumbs'] = array(
     '#type' => 'checkbox',
     '#title' => t('Show breadcrumbs in a page'),
-    '#default_value' => theme_get_setting('breadcrumbs', 'bamboo'),
+    '#default_value' => theme_get_setting('breadcrumbs'),
     '#description' => t("Check this option to show breadcrumbs in page. Uncheck to hide."),
   );
 
   $form['bamboo_settings']['general_settings']['bamboo_themelogo'] = array(
     '#type' => 'checkbox',
     '#title' => t('Use theme Logo?'),
-    '#default_value' => theme_get_setting('bamboo_themelogo', 'bamboo'),
+    '#default_value' => theme_get_setting('bamboo_themelogo'),
     '#description' => t("Check for yes, uncheck to upload your own logo!"),
   );
 
@@ -119,7 +118,7 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['additional_settings']['other_settings']['bamboo_localcss'] = array(
     '#type' => 'checkbox',
     '#title' => t('Use local.css?'),
-    '#default_value' => theme_get_setting('bamboo_localcss', 'bamboo'),
+    '#default_value' => theme_get_setting('bamboo_localcss'),
     '#description' => t("This setting allows you to use your own custom css file within the Bamboo
     theme folder. Only check this box if you have renamed local.sample.css to local.css.
     You must clear the Drupal cache after doing this."),
@@ -128,14 +127,14 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['additional_settings']['other_settings']['bamboo_tertiarymenu'] = array(
     '#type' => 'checkbox',
     '#title' => t('Use tertiary drop down menus?'),
-    '#default_value' => theme_get_setting('bamboo_tertiarymenu', 'bamboo'),
+    '#default_value' => theme_get_setting('bamboo_tertiarymenu'),
     '#description' => t("Check this box if you are going to have tertiary (third level drop down menus)"),
   );
 
   $form['additional_settings']['other_settings']['bamboo_viewport'] = array(
     '#type' => 'checkbox',
     '#title' => t('Use Touch device pinch and zoom?'),
-    '#default_value' => theme_get_setting('bamboo_viewport', 'bamboo'),
+    '#default_value' => theme_get_setting('bamboo_viewport'),
     '#description' => t("** Check this box ONLY if you want to enable touch device users to be able to pinch and zoom.
     Note this is purely experimental and if you enable this, there is no support for layouts breaking."),
   );
@@ -143,14 +142,14 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['additional_settings']['other_settings']['bamboo_imagecaptions'] = array(
     '#type' => 'checkbox',
     '#title' => t('Use Image Captions?'),
-    '#default_value' => theme_get_setting('bamboo_imagecaptions', 'bamboo'),
+    '#default_value' => theme_get_setting('bamboo_imagecaptions'),
     '#description' => t("Check this box if you would like captions for imagefield images."),
   );
 
   $form['additional_settings']['other_settings']['bamboo_tablehover'] = array(
     '#type' => 'checkbox',
     '#title' => t('Use experimental table hover effect?'),
-    '#default_value' => theme_get_setting('bamboo_tablehover', 'bamboo'),
+    '#default_value' => theme_get_setting('bamboo_tablehover'),
     '#description' => t("Check this box for an experimental hover effect on table cells."),
   );
 
@@ -165,7 +164,7 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['custom_css_path_settings']['custom_css_path']['bamboo_custom_css_location'] = array(
     '#type' => 'checkbox',
     '#title' => t('Only check the box if you want to specify a custom path below to your local css file.'),
-    '#default_value' => theme_get_setting('bamboo_custom_css_location', 'bamboo'),
+    '#default_value' => theme_get_setting('bamboo_custom_css_location'),
   );
 
   $form['custom_css_path_settings']['custom_css_path']['bamboo_custom_css_path'] = array(
@@ -173,7 +172,7 @@ function bamboo_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('Path to Custom Stylesheet'),
     '#description' => t('Specify a custom path to the local.css file without the leading slash:
     e.g.: sites/default/files/custom-css/local.css you must check the box above for this to work.'),
-    '#default_value' => theme_get_setting('bamboo_custom_css_path', 'bamboo'),
+    '#default_value' => theme_get_setting('bamboo_custom_css_path'),
   );
 
 }
